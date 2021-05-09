@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/CMakeFiles/ELF2UF2Build
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/CMakeFiles/ELF2UF2Build.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/CMakeFiles/ELF2UF2Build-complete.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/Hola Mundo/Hola_Mundo/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

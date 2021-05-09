@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/CMakeFiles/elf2uf2.dir/embed.manifest"

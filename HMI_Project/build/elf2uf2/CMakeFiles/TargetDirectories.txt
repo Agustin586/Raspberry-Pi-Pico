@@ -1,0 +1,5 @@
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/CMakeFiles/elf2uf2.dir
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/CMakeFiles/edit_cache.dir
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
