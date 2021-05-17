@@ -82,8 +82,10 @@
 #include "hardware/i2c.h"
 #include "hardware/timer.h"
 #include <stdint.h>
+#include "Mef.h"
 #include "Control_Serial.h"
 #include "Control_Lcd.h"
+
 
 // I2C defines
 // This example will use I2C0 on GPIO8 (SDA) and GPIO9 (SCL) running at 400KHz.
@@ -100,19 +102,6 @@
 // --------------------------------------------------------------------------------- //
 //                                  VARIABLES                                        //
 // --------------------------------------------------------------------------------- //
-
-// Variables para maquina de estados//
-typedef enum
-{
-    Est_Display,
-    Est_Pwm1,
-    Est_Pwm2,
-    Est_Temperature,
-    Est_Serial
-}Mef_estate;
-
-Mef_estate Actual_State;
-// -- //
 
 // Variables para Serial //
 volatile char Buffer_HmiToMicro[25],Rx;
@@ -170,8 +159,8 @@ int main()
 
     while (1)
     {
-
+        Mef_Updated();
     }
-    
+
     return 0;
 }

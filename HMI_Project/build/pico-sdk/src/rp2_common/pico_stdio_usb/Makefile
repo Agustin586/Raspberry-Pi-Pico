@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project"
+CMAKE_SOURCE_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,18 +76,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb\\CMakeFiles\progress.marks"
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_stdio_usb\all
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" 0
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_stdio_usb\clean
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
 .PHONY : clean
 
 # The main clean target
@@ -96,23 +96,23 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_stdio_usb\preinstall
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\pico_stdio_usb\preinstall
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
 .PHONY : depend
 
 # Help Target
@@ -134,8 +134,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\PICO_S~4
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\pico_stdio_usb
 .PHONY : cmake_check_build_system
 

@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -27,7 +27,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "PICO_BIT_OPS_PICO=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Release\""
+  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_DIVIDER_HARDWARE=1"
@@ -122,8 +122,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/SecuenciaLuces.c" "CMakeFiles/SecuenciaLuces.dir/SecuenciaLuces.c.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/SecuenciaLuces.c.obj.d"
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/SecuenciaLuces.dir/b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/SecuenciaLuces.c" "CMakeFiles/SecuenciaLuces.dir/SecuenciaLuces.c.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/SecuenciaLuces.c.obj.d"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/SecuenciaLuces.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 
 # Targets to which this target links.

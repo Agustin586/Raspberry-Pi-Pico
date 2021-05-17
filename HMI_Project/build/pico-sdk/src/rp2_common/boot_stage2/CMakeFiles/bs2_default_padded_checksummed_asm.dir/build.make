@@ -42,10 +42,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project"
+CMAKE_SOURCE_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 # Utility rule file for bs2_default_padded_checksummed_asm.
 
@@ -56,20 +56,20 @@ include pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checks
 include pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\progress.make
 
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm: pico-sdk\src\rp2_common\boot_stage2\bs2_default_padded_checksummed.S
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\BOOT_S~1
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 pico-sdk\src\rp2_common\boot_stage2\bs2_default_padded_checksummed.S: pico-sdk\src\rp2_common\boot_stage2\bs2_default.bin
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\BOOT_S~1
-	echo >nul && "C:\Program Files\Python39\python.exe" C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S"
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2
+	echo >nul && "C:\Program Files\Python39\python.exe" C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 pico-sdk\src\rp2_common\boot_stage2\bs2_default.bin: pico-sdk\src\rp2_common\boot_stage2\bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\BOOT_S~1
-	echo >nul && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin\arm-none-eabi-objcopy.exe" -Obinary "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin"
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2
+	echo >nul && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 bs2_default_padded_checksummed_asm: pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm
 bs2_default_padded_checksummed_asm: pico-sdk\src\rp2_common\boot_stage2\bs2_default.bin
@@ -82,12 +82,12 @@ pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_as
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build
 
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\clean:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build\pico-sdk\src\RP2_CO~1\BOOT_S~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2
 	$(CMAKE_COMMAND) -P CMakeFiles\bs2_default_padded_checksummed_asm.dir\cmake_clean.cmake
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\HMI_PR~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\clean
 
 pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project" C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\boot_stage2 "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\boot_stage2 C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2 C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\depend
 

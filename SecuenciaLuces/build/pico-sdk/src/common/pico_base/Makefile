@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces"
+CMAKE_SOURCE_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,18 +76,18 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\CMakeFiles" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\pico-sdk\src\common\pico_base\\CMakeFiles\progress.marks"
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\CMakeFiles C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\common\pico_base\all
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\CMakeFiles" 0
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\common\pico_base\clean
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
 .PHONY : clean
 
 # The main clean target
@@ -96,23 +96,23 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\common\pico_base\preinstall
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\common\pico_base\preinstall
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
 .PHONY : depend
 
 # Help Target
@@ -134,8 +134,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\pico-sdk\src\common\PICO_B~1
+	cd C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\pico-sdk\src\common\pico_base
 .PHONY : cmake_check_build_system
 

@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces"
+CMAKE_SOURCE_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\CMakeFiles" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\CMakeFiles C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\SecuenciaLuces\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -834,6 +834,14 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_sh
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj
 
@@ -970,6 +978,30 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i
+
+# target to preprocess a source file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s
+
+# target to generate assembly for a file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj
 
@@ -1065,38 +1097,6 @@ SecuenciaLuces.s: SecuenciaLuces.c.s
 SecuenciaLuces.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\SecuenciaLuces.c.s
 .PHONY : SecuenciaLuces.c.s
-
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj
-
-# target to build an object file
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.obj: b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.obj
-
-# target to build an object file
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.obj
-
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.i: b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.i
-
-# target to preprocess a source file
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.i
-
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.s: b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.s
-
-# target to generate assembly for a file
-b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SecuenciaLuces.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SecuenciaLuces.dir\b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\src\rp2_common\pico_standard_link\new_delete.cpp.s
 
 # Help Target
 help:
@@ -1194,6 +1194,7 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
@@ -1211,6 +1212,9 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s
@@ -1223,10 +1227,6 @@ help:
 	@echo ... SecuenciaLuces.obj
 	@echo ... SecuenciaLuces.i
 	@echo ... SecuenciaLuces.s
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_standard_link/new_delete.obj
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_standard_link/new_delete.i
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/src/rp2_common/pico_standard_link/new_delete.s
 .PHONY : help
 
 

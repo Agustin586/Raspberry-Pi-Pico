@@ -31,9 +31,9 @@ CMakeFiles\SecuenciaLuces.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\stdint.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_intsup.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_stdint.h \
- C\:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\GENERA~1\PICO_B~1/pico/version.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\generated\pico_base/pico/version.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- C\:\Users\aguat\OneDrive\PROGRA~1\Github\PROGRA~1\RASPBE~1\PROGRA~1\SECUEN~1\build\GENERA~1\PICO_B~1/pico/config_autogen.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\SecuenciaLuces\build\generated\pico_base/pico/config_autogen.h \
  C\:/Users/aguat/Documents/Pico/pico-sdk/src/boards/include/boards/pico.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\include/pico/platform.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_base\include/pico/types.h \

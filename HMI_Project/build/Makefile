@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project"
+CMAKE_SOURCE_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Programacion Microcontroladores\Github\Programas\Raspberry Pi Pico\Programacion en C\HMI_Project\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\HMI_Project\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -457,6 +457,54 @@ C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.s: C_
 C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i
+
+# target to preprocess a source file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s
+
+# target to generate assembly for a file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i
+
+# target to preprocess a source file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
+
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s
+
+# target to generate assembly for a file
+C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.obj
@@ -1106,6 +1154,30 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
 
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
+
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj
 
@@ -1482,78 +1554,6 @@ HMI_Project.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\HMI_Project.c.s
 .PHONY : HMI_Project.c.s
 
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.obj: a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.obj
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.obj
-
-# target to build an object file
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.obj
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.obj
-
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.i: a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.i
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.i
-
-# target to preprocess a source file
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.i
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.i
-
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.s: a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.s
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.s
-
-# target to generate assembly for a file
-a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.s
-.PHONY : a8be826da0044e5ffe52ba08d2ef41f0\rp2040_usb_device_enumeration.c.s
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj
-
-# target to build an object file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i
-
-# target to preprocess a source file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s
-
-# target to generate assembly for a file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj
-
-# target to build an object file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i
-
-# target to preprocess a source file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s: b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s
-
-# target to generate assembly for a file
-b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMI_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\HMI_Project.dir\b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-.PHONY : b0bbd2534b939a3865a31f1f9c1b99c9\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1603,6 +1603,12 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.s
@@ -1684,6 +1690,9 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
@@ -1731,15 +1740,6 @@ help:
 	@echo ... HMI_Project.obj
 	@echo ... HMI_Project.i
 	@echo ... HMI_Project.s
-	@echo ... a8be826da0044e5ffe52ba08d2ef41f0/rp2040_usb_device_enumeration.obj
-	@echo ... a8be826da0044e5ffe52ba08d2ef41f0/rp2040_usb_device_enumeration.i
-	@echo ... a8be826da0044e5ffe52ba08d2ef41f0/rp2040_usb_device_enumeration.s
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
-	@echo ... b0bbd2534b939a3865a31f1f9c1b99c9/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
 .PHONY : help
 
 

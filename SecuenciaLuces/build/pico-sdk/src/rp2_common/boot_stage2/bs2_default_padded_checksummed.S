@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/SecuenciaLuces/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/SecuenciaLuces/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

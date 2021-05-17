@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S" "C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S" "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 

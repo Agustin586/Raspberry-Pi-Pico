@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/common/cmake_install.cmake")
-  include("C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("C:/Users/aguat/OneDrive/Programacion Microcontroladores/Github/Programas/Raspberry Pi Pico/Programacion en C/HMI_Project/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/common/cmake_install.cmake")
+  include("C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/HMI_Project/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 
