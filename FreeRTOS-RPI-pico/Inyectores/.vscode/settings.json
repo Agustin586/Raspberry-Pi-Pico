@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "multicore.h": "c",
+        "freertos.h": "c"
+    }
+}

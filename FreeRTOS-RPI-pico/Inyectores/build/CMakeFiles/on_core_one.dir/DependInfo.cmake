@@ -113,6 +113,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 
 # The set of dependency files which are needed:
@@ -120,7 +122,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj.d"
-  "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.c.obj.d"
+  "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_4.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/queue.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/queue.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/queue.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/stream_buffer.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/stream_buffer.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/stream_buffer.c.obj.d"
@@ -139,6 +141,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
+  "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/on_core_one.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"

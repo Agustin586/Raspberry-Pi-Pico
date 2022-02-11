@@ -106,6 +106,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named inyectores
+
+# Build rule for target.
+inyectores: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) inyectores
+.PHONY : inyectores
+
+# fast build rule for target.
+inyectores\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\build
+.PHONY : inyectores\fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -117,32 +130,6 @@ ELF2UF2Build: cmake_check_build_system
 ELF2UF2Build\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ELF2UF2Build.dir\build
 .PHONY : ELF2UF2Build\fast
-
-#=============================================================================
-# Target rules for targets named on_core_zero
-
-# Build rule for target.
-on_core_zero: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) on_core_zero
-.PHONY : on_core_zero
-
-# fast build rule for target.
-on_core_zero\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\build
-.PHONY : on_core_zero\fast
-
-#=============================================================================
-# Target rules for targets named on_core_one
-
-# Build rule for target.
-on_core_one: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) on_core_one
-.PHONY : on_core_one
-
-# fast build rule for target.
-on_core_one\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\build
-.PHONY : on_core_one\fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -188,8 +175,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.obj: C_\Users\aguat\Doc
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i
@@ -197,8 +183,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.i: C_\Users\aguat\Docum
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s
@@ -206,8 +191,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.s: C_\Users\aguat\Docum
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
@@ -215,8 +199,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.obj: C_\Users\aguat
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i
@@ -224,8 +207,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.i: C_\Users\aguat\D
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s
@@ -233,8 +215,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.s: C_\Users\aguat\D
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj
@@ -242,8 +223,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.obj: C_\Users\aguat\Documen
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i
@@ -251,8 +231,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.i: C_\Users\aguat\Documents
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s
@@ -260,8 +239,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.s: C_\Users\aguat\Documents
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
@@ -269,8 +247,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.obj: C_\
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
@@ -278,8 +255,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.i: C_\Us
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
@@ -287,8 +263,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.s: C_\Us
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
@@ -296,8 +271,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\p
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
@@ -305,8 +279,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\p
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
@@ -314,8 +287,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\p
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj
@@ -323,8 +295,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.obj: C_\Users\aguat\Docume
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i
@@ -332,8 +303,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.i: C_\Users\aguat\Document
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s
@@ -341,8 +311,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.s: C_\Users\aguat\Document
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
@@ -350,8 +319,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.obj: C_\Users\agua
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
@@ -359,8 +327,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.i: C_\Users\aguat\
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
@@ -368,8 +335,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.s: C_\Users\aguat\
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj
@@ -377,8 +343,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.obj: C_\Users\aguat\Docume
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i
@@ -386,8 +351,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.i: C_\Users\aguat\Document
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s
@@ -395,8 +359,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.s: C_\Users\aguat\Document
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.s
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj
@@ -404,8 +367,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.obj: C_\Users\aguat\Docum
 
 # target to build an object file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.i: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i
@@ -413,8 +375,7 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.i: C_\Users\aguat\Documen
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i
 
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.s: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s
@@ -422,449 +383,15 @@ C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.s: C_\Users\aguat\Documen
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.obj: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.i: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.s: C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
@@ -872,8 +399,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.i: 
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
@@ -881,8 +407,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.s: 
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
@@ -890,8 +415,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.obj: C_\Us
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
@@ -899,8 +423,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.i: C_\User
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
@@ -908,8 +431,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.s: C_\User
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
@@ -917,8 +439,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.obj: C_\Users\
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
@@ -926,8 +447,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.i: C_\Users\ag
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
@@ -935,8 +455,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.s: C_\Users\ag
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
@@ -944,8 +463,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.obj: C_\Users\ag
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i
@@ -953,8 +471,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.i: C_\Users\agua
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s
@@ -962,8 +479,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.s: C_\Users\agua
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj
@@ -971,8 +487,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.obj: C_\Users\a
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i
@@ -980,8 +495,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.i: C_\Users\agu
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s
@@ -989,8 +503,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.s: C_\Users\agu
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
@@ -998,8 +511,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
@@ -1007,8 +519,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.i: C_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
@@ -1016,8 +527,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.s: C_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
@@ -1025,8 +535,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.obj: C_\Use
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i
@@ -1034,8 +543,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.i: C_\Users
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s
@@ -1043,8 +551,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.s: C_\Users
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
@@ -1052,8 +559,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.obj: C_\Users\
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i
@@ -1061,8 +567,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.i: C_\Users\ag
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s
@@ -1070,8 +575,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.s: C_\Users\ag
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj
@@ -1079,8 +583,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.obj: C_\Users\
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i
@@ -1088,8 +591,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.i: C_\Users\ag
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s
@@ -1097,8 +599,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.s: C_\Users\ag
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
@@ -1106,8 +607,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
@@ -1115,8 +615,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i: C_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
@@ -1124,8 +623,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s: C_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
@@ -1133,8 +631,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
@@ -1142,8 +639,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i: 
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
@@ -1151,8 +647,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s: 
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
@@ -1160,8 +655,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.o
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
@@ -1169,8 +663,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\excepti
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
@@ -1178,8 +671,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\excepti
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
@@ -1187,41 +679,15 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\excepti
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
@@ -1229,8 +695,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
@@ -1238,17 +703,39 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.obj
+
+# target to build an object file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.i
+
+# target to preprocess a source file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.s
+
+# target to generate assembly for a file
+C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
@@ -1256,8 +743,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i: C_\Use
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
@@ -1265,8 +751,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s: C_\Use
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
@@ -1274,8 +759,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_c
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
@@ -1283,8 +767,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj: C_\U
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
@@ -1292,8 +775,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i: C_\Use
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
@@ -1301,8 +783,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\Use
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
@@ -1310,8 +791,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj: C_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
@@ -1319,8 +799,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
@@ -1328,8 +807,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
@@ -1337,8 +815,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
@@ -1346,8 +823,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i: C_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
@@ -1355,8 +831,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s: C_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
@@ -1364,8 +839,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj: C_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
@@ -1373,8 +847,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
@@ -1382,8 +855,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
@@ -1391,8 +863,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj: C_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
@@ -1400,8 +871,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
@@ -1409,8 +879,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
@@ -1418,8 +887,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
@@ -1427,8 +895,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
@@ -1436,8 +903,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
@@ -1445,8 +911,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj: C_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
@@ -1454,8 +919,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
@@ -1463,8 +927,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
@@ -1472,8 +935,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
@@ -1481,8 +943,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
@@ -1490,8 +951,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i: C_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
@@ -1499,8 +959,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s: C_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
@@ -1508,8 +967,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
@@ -1517,8 +975,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.o
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
@@ -1526,8 +983,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_ro
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
@@ -1535,8 +991,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_ro
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
@@ -1544,8 +999,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_ro
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
@@ -1553,8 +1007,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.ob
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
@@ -1562,8 +1015,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i:
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
@@ -1571,8 +1023,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s:
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
@@ -1580,41 +1031,15 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
@@ -1622,8 +1047,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
@@ -1631,8 +1055,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
@@ -1640,8 +1063,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
@@ -1649,8 +1071,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj:
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
@@ -1658,8 +1079,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i: C
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
@@ -1667,8 +1087,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s: C
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
@@ -1676,8 +1095,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_sh
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
@@ -1685,8 +1103,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
@@ -1694,8 +1111,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.ob
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
@@ -1703,8 +1119,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i:
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
@@ -1712,8 +1127,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s:
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
@@ -1721,8 +1135,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
@@ -1730,8 +1143,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.o
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
@@ -1739,8 +1151,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
@@ -1748,8 +1159,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
@@ -1757,8 +1167,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
@@ -1766,8 +1175,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i: 
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
@@ -1775,8 +1183,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s: 
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
@@ -1784,8 +1191,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj: C_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
@@ -1793,8 +1199,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
@@ -1802,8 +1207,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
@@ -1811,8 +1215,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj: 
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
@@ -1820,8 +1223,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i: C_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
@@ -1829,8 +1231,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s: C_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
@@ -1838,8 +1239,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
@@ -1847,8 +1247,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
@@ -1856,8 +1255,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
@@ -1865,8 +1263,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.ob
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
@@ -1874,8 +1271,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_del
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
@@ -1883,8 +1279,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_del
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
@@ -1892,8 +1287,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_del
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
@@ -1901,8 +1295,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\U
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
@@ -1910,8 +1303,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i: C_\Use
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
@@ -1919,8 +1311,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s: C_\Use
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
@@ -1928,8 +1319,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
@@ -1937,8 +1327,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
@@ -1946,89 +1335,15 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj
 
 # target to build an object file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
@@ -2036,8 +1351,7 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i: C_\U
 
 # target to preprocess a source file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
 
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
@@ -2045,41 +1359,15 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s: C_\U
 
 # target to generate assembly for a file
 C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.obj: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.obj
-
-# target to build an object file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.i: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.i
-
-# target to preprocess a source file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
-
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.s: C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.s
-
-# target to generate assembly for a file
-C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
-.PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\main.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -2087,8 +1375,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\main.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -2096,8 +1383,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_zero.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_zero.dir\main.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\on_core_one.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\on_core_one.dir\main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -2112,8 +1398,7 @@ help:
 	@echo ... bs2_default_bin
 	@echo ... bs2_default_padded_checksummed_asm
 	@echo ... bs2_default
-	@echo ... on_core_one
-	@echo ... on_core_zero
+	@echo ... inyectores
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.obj
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.i
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.s
@@ -2141,60 +1426,6 @@ help:
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/timers.obj
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/timers.i
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/timers.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/lib/tinyusb/src/tusb.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.s
@@ -2232,12 +1463,12 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s
@@ -2276,9 +1507,6 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
@@ -2317,21 +1545,9 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
-	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

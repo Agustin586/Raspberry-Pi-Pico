@@ -1,7 +1,6 @@
+C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/inyectores.dir
 C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/rebuild_cache.dir
 C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/ELF2UF2Build.dir
-C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/on_core_zero.dir
-C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/on_core_one.dir
 C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/CMakeFiles/edit_cache.dir
 C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/FREERTOS_KERNEL/CMakeFiles/edit_cache.dir
 C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/FREERTOS_KERNEL/CMakeFiles/rebuild_cache.dir

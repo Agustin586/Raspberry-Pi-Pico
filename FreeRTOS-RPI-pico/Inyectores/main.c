@@ -7,14 +7,17 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "pico/multicore.h"
+#include "hardware/uart.h"
+#include "hardware/i2c.h"
+#include "hardware/irq.h"
+#include "hardware/pwm.h"
+#include "hardware/gpio.h"
 
 #ifndef mainRUN_FREE_RTOS_ON_CORE
 #define mainRUN_FREE_RTOS_ON_CORE 0
 #endif
 
-/* Priorities at which the tasks are created.  The event semaphore task is
-given the maximum priority of ( configMAX_PRIORITIES - 1 ) to ensure it runs as
-soon as the semaphore is given. */
+/* Configuraciones y parametros */
 #define mainSDK_MUTEX_USE_TASK_PRIORITY     ( tskIDLE_PRIORITY + 3 )
 #define mainSDK_SEMAPHORE_USE_TASK_PRIORITY ( tskIDLE_PRIORITY + 2 )
 #define mainQUEUE_RECEIVE_TASK_PRIORITY     ( tskIDLE_PRIORITY + 2 )
@@ -24,19 +27,6 @@ soon as the semaphore is given. */
 #define mainMEF_TASK_PRIORITY               ( tskIDLE_PRIORITY + 2 )
 #define mainUARTRX_TASK_PRIORITY            ( tskIDLE_PRIORITY + 1 )
 #define mainADC_TASK_PRIORITY               ( tskIDLE_PRIORITY + 1 )
-
-/* The rate at which data is sent to the queue, specified in milliseconds, and
-converted to ticks using the pdMS_TO_TICKS() macro. */
-#define mainQUEUE_SEND_PERIOD_MS            pdMS_TO_TICKS( 200 )
-
-/* The period of the example software timer, specified in milliseconds, and
-converted to ticks using the pdMS_TO_TICKS() macro. */
-#define mainSOFTWARE_TIMER_PERIOD_MS        pdMS_TO_TICKS( 1000 )
-
-/* The number of items the queue can hold.  This is 1 as the receive task
-has a higher priority than the send task, so will remove items as they are added,
-meaning the send task should always find the queue empty. */
-#define mainQUEUE_LENGTH                    ( 1 )
 
 /* Definimos los pines de los perfiricos*/
 #define pinINYECTORES   2
@@ -49,23 +39,35 @@ meaning the send task should always find the queue empty. */
 #define pinRGB_red      11
 #define pinRGB_green    12
 #define pinRGB_blue     13
+#define pinSELECT       21
 #define LED_rpi_pico    25
 #define GPIO_INPUT  false
 #define HIGH    1
 #define LOW     0
 
-#define UART_ID     uart0_t
-#define TX_pin      0
-#define RX_pin      1
 #define I2C_ID      i2c0_t
 #define I2C_sda     4
 #define I2C_scl     5
+
+// Uart datos
+#define UART_ID uart0
+#define BAUD_RATE 115200
+#define DATA_BITS 8
+#define STOP_BITS 1
+#define PARITY    UART_PARITY_NONE
+#define UART_TX_PIN 0
+#define UART_RX_PIN 1
 
 /* Definimos delays de rtos */
 #define ANT_DELAY   pdMS_TO_TICKS ( 40 )
 #define DELAY_500ms pdMS_TO_TICKS ( 500 )
 #define DELAY_300ms pdMS_TO_TICKS ( 300 )
-
+#define DELAY_15ms  pdMS_TO_TICKS ( 15 )
+#define DELAY_200ms pdMS_TO_TICKS ( 200 )
+#define DELAY_30ms  pdMS_TO_TICKS ( 30 )
+#define DELAY_5ms   pdMS_TO_TICKS ( 5 )
+#define DELAY_20ms  pdMS_TO_TICKS ( 20 )
+#define DELAY_60ms  pdMS_TO_TICKS ( 60 )
 
 /*-----------------------------------------------------------*/
 
@@ -73,27 +75,40 @@ meaning the send task should always find the queue empty. */
 static void vUartRx_Task ( void *pvParameter );
 static void vMef_Task ( void *pvParameter );
 static void vAdc_Task ( void *pvParameter );
+static void prvSetupHardware( void );
 /*-----------------------------------------------------------*/
 
 /* Prototipos de funciones no rtos */
 void Mef_init ( void );
 void Mef ( void );
 void Antirrebote ( void );
+void ModSelect ( uint8_t valor );
+void SentData_Nextion ( void );
+/*-----------------------------------------------------------*/
+
+/* Funciones de interrupcion */
+void vISR_uartrx ( void );                              // Hardware interrupt
+static void vISR_uartrx_Task ( void *pvParameter );    // Procesa la interrupcion por uart
 /*-----------------------------------------------------------*/
 
 /* Callback functions timers */
-/**
- * @brief Realiza un blink en el pin 25 
- * 
- * @param xTimer 
- */
-static void prvBlinkTimer ( TimerHandle_t xTimer );
-/**
- * @brief Reliza un blink cuando se activa la salida pwm
- * 
- * @param xTimer 
- */
-static void prvPwmEnableTimer ( TimerHandle_t xTimer );
+static void prvBlinkTimer ( TimerHandle_t xTimer );     // Realiza un blink en el pin 25
+static void prvPwmEnableTimer ( TimerHandle_t xTimer ); // Realiza un blink cuando se activa la salida pwm
+static void prvEncoderAntirrebote ( TimerHandle_t xTimer ); // Antirrebote para el encoder
+static void prvConfigTimer ( TimerHandle_t xTimer );
+/*-----------------------------------------------------------*/
+
+/* Callbakc functions para las interrupciones por pines */
+void vISR_gpioAcallback ( uint gpio, uint32_t events );
+void vISR_gpioBcallback ( uint gpio, uint32_t events );
+static void vISR_pinA_edgeRising ( void *pvParameter );
+static void vISR_pinA_edgeFalling ( void *pvParameter );
+/*-----------------------------------------------------------*/
+
+/* Semaforos */
+SemaphoreHandle_t xUartRxSemaphore;
+SemaphoreHandle_t xEncA_rising;
+SemaphoreHandle_t xEncA_falling;
 /*-----------------------------------------------------------*/
 
 typedef enum
@@ -104,6 +119,17 @@ typedef enum
     MODO_FUGA,
     IDLE
 }Data_est;
+
+typedef enum
+{
+    ATRAS,
+    ACEPTAR,
+    PWM_CONFIG,
+    RPM_CONFIG,
+    SEG_CONFIG,
+    MIN_CONFIG,
+    HOR_CONFIG
+}Nextion_est;
 
 typedef struct
 {
@@ -122,13 +148,17 @@ typedef struct
     uint8_t ucMin;
 }Data_rtc;
 
-Data_est Est_mef;
+Data_est Est_mef,Modo;
 Data_inyector strData_iny;
 Data_rtc strDate;
+Nextion_est Select;
 /*-----------------------------------------------------------*/
 
-volatile bool bEncPush = false;
-volatile uint8_t ucEncCont = 0;
+volatile bool bEncPush = false, bStringComplete = false, bEncAB = false;
+volatile uint16_t ucEncCont = 0;
+char cStringRx[20];
+volatile uint8_t ucIndice = 0;
+TimerHandle_t xAntirreboteTimer,xConfigTimer;
 /*-----------------------------------------------------------*/
 
 #include "pico/mutex.h"
@@ -161,8 +191,23 @@ static void prvCore1Entry() {
 
 int main(void)
 {
-    TimerHandle_t xBlinkTimer, xPwmEnableTimer;    
+    TimerHandle_t xBlinkTimer, xPwmEnableTimer;
     
+    prvSetupHardware();
+    
+    // Creamos un semaforo para las interrupciones
+    xUartRxSemaphore = xSemaphoreCreateCounting ( 10,0 );
+    xEncA_rising = xSemaphoreCreateCounting ( 10,0 );
+    xEncA_falling = xSemaphoreCreateCounting ( 10,0 );
+
+    // Creamos la funcion que procesa la interrupcion por uart
+    // if ( xUartRxSemaphore != NULL )
+    //     xTaskCreate ( vISR_uartrx_Task,"UART_RX_ISR",mainSTACKDEPTH,NULL,configMAX_PRIORITIES,NULL );
+    if ( xEncA_rising != NULL )
+        xTaskCreate ( vISR_pinA_edgeRising,"ENC_A_ISR",mainSTACKDEPTH,NULL,configMAX_PRIORITIES-1,NULL );
+    if ( xEncA_falling != NULL )
+        xTaskCreate ( vISR_pinA_edgeFalling,"ENC_A_ISRfalling",mainSTACKDEPTH,NULL,configMAX_PRIORITIES-1,NULL );
+
     /* Creamos las tareas de mef, envio de uart y lectura de adc */
     xTaskCreate ( vMef_Task,"MEF",mainSTACKDEPTH,NULL,mainMEF_TASK_PRIORITY,NULL );
     xTaskCreate ( vUartRx_Task,"UART RX",mainSTACKDEPTH,NULL,mainUARTRX_TASK_PRIORITY,NULL );
@@ -171,9 +216,13 @@ int main(void)
     /* Creamos los software timers:
         1. Blink funcion durante todo el transcurso del programa y realiza un blink en el pin 25
         2. Se activa cuando la salida de pwm esta activa y realiza un blink en el rgb red
+        3. Se activa cuando surge el cambio de estado de la interrupcion
+        4. Se activa cuando se comienza a configurar los parametros
     */
     xBlinkTimer = xTimerCreate ( "BLINK",DELAY_500ms,pdTRUE,0,prvBlinkTimer );
     xPwmEnableTimer = xTimerCreate ( "BLINK_PWM",DELAY_300ms,pdTRUE,0,prvPwmEnableTimer );
+    xAntirreboteTimer = xTimerCreate ( "ANTIRREBOTE",DELAY_20ms,pdFALSE,0,prvEncoderAntirrebote );
+    xConfigTimer = xTimerCreate ( "CONFIG",DELAY_200ms,pdTRUE,0,prvConfigTimer );
 
     // Inicia el/los timer/s
     if ( xBlinkTimer != NULL )  xTimerStart ( xBlinkTimer,0 );
@@ -189,16 +238,15 @@ int main(void)
 
 static void vMef_Task ( void *pvParameter )
 {
-    Data_est Modo;
-    
     Mef_init ();
 
     while (1)
     {
         Mef ();
+        vTaskDelay ( DELAY_15ms );
     }
 
-    vTaskDelay(NULL);
+    vTaskDelete ( NULL );
     return;
 }
 /*-----------------------------------------------------------*/
@@ -207,10 +255,10 @@ static void vUartRx_Task ( void *pvParameter )
 {
     while (1)
     {
-        
+        vTaskDelay ( DELAY_15ms );
     }
 
-    vTaskDelay(NULL);
+    vTaskDelete ( NULL );
     return;
 }
 /*-----------------------------------------------------------*/
@@ -219,10 +267,10 @@ static void vAdc_Task ( void *pvParameter )
 {
     while (1)
     {
-        
+        vTaskDelay ( DELAY_15ms );
     }
 
-    vTaskDelay(NULL);
+    vTaskDelete ( NULL );
     return;
 }
 /*-----------------------------------------------------------*/
@@ -305,39 +353,59 @@ static void prvSetupHardware( void )
     /* Want to be able to printf */
     stdio_init_all();
     /* And flash LED */
-    gpio_init(LED_rpi_pico);
-    gpio_init(pinINYECTORES);
-    gpio_init(pinBOMBA1);
-    gpio_init(pinBOMBA2);
-    gpio_init(pinENCODER_A);
-    gpio_init(pinENCODER_B);
-    gpio_init(pinENCODER_PUSH);
-    gpio_init(pinBUZZER);
-    gpio_init(pinRGB_red);
-    gpio_init(pinRGB_green);
-    gpio_init(pinRGB_blue);
+    gpio_init( LED_rpi_pico );
+    gpio_init( pinINYECTORES );
+    gpio_init( pinBOMBA1 );
+    gpio_init( pinBOMBA2 );
+    // gpio_init( pinENCODER_A );
+    // gpio_init( pinENCODER_B );
+    gpio_init( pinENCODER_PUSH );
+    gpio_init( pinBUZZER );
+    gpio_init( pinRGB_red );
+    gpio_init( pinRGB_green );
+    gpio_init( pinRGB_blue );
+    gpio_init( pinSELECT );
 
     /* Seteamos direccion */
-    gpio_set_dir( LED_rpi_pico, GPIO_OUT );
-    gpio_set_dir( pinBOMBA1, GPIO_OUT );
-    gpio_set_dir( pinBOMBA2, GPIO_OUT );
-    gpio_set_dir( pinENCODER_A, GPIO_INPUT );
-    gpio_set_dir( pinENCODER_B, GPIO_INPUT );
-    gpio_set_dir( pinENCODER_PUSH, GPIO_INPUT );
-    gpio_set_dir( pinRGB_red, GPIO_OUT );
-    gpio_set_dir( pinRGB_green, GPIO_OUT );
-    gpio_set_dir( pinRGB_blue, GPIO_OUT );
+    gpio_set_dir ( LED_rpi_pico, GPIO_OUT );
+    gpio_set_dir ( pinBOMBA1, GPIO_OUT );
+    gpio_set_dir ( pinBOMBA2, GPIO_OUT );
+    // gpio_set_dir ( pinENCODER_A, GPIO_INPUT );
+    // gpio_set_dir ( pinENCODER_B, GPIO_INPUT );
+    gpio_set_dir ( pinENCODER_PUSH, GPIO_INPUT );
+    gpio_set_dir ( pinRGB_red, GPIO_OUT );
+    gpio_set_dir ( pinRGB_green, GPIO_OUT );
+    gpio_set_dir ( pinRGB_blue, GPIO_OUT );
+    gpio_set_dir ( pinSELECT, GPIO_INPUT );
+    gpio_set_dir ( pinBUZZER, GPIO_OUT);
 
     /* Seteamos la funcion */
-    gpio_set_function( pinINYECTORES, GPIO_FUNC_PWM );
+    gpio_set_function ( pinINYECTORES, GPIO_FUNC_PWM );
 
     /* Seteamos los estados iniciales de las salidas */
-    gpio_put ( LED_rpi_pico, LOW );
+    gpio_put ( LED_rpi_pico, HIGH );
     gpio_put ( pinBOMBA1, LOW );
     gpio_put ( pinBOMBA2, LOW );
     gpio_put ( pinRGB_red, LOW );
     gpio_put ( pinRGB_green, LOW );
     gpio_put ( pinRGB_blue, LOW );
+    gpio_put ( pinBUZZER, LOW);
+    
+    /* Configuramos las interrupciones */
+    // UART init
+    uart_init ( UART_ID, BAUD_RATE );
+    gpio_set_function ( UART_TX_PIN, GPIO_FUNC_UART );
+    gpio_set_function ( UART_RX_PIN, GPIO_FUNC_UART );
+    uart_set_format ( UART_ID, DATA_BITS, STOP_BITS, PARITY );
+    uart_set_fifo_enabled ( UART_ID, false );
+    // irq_set_exclusive_handler ( UART0_IRQ, vISR_uartrx );
+    // irq_set_enabled ( UART0_IRQ, true);
+    // uart_set_irq_enables ( UART_ID, true, false );
+
+    // // Interrupciones por cambio de flanco en pines
+    gpio_pull_up ( pinENCODER_A );
+    gpio_pull_up ( pinENCODER_B );
+    gpio_set_irq_enabled_with_callback ( pinENCODER_A, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &vISR_gpioAcallback );
 }
 /*-----------------------------------------------------------*/
 
@@ -353,6 +421,20 @@ static void prvPwmEnableTimer ( TimerHandle_t xTimer )
 }
 /*-----------------------------------------------------------*/
 
+static void prvEncoderAntirrebote ( TimerHandle_t xTimer )
+{
+    bEncAB = false;
+}
+/*-----------------------------------------------------------*/
+
+static void prvConfigTimer ( TimerHandle_t xTimer )
+{
+    if ( gpio_get ( pinRGB_blue ) || gpio_get ( pinRGB_green ) )
+        gpio_put ( pinRGB_blue, LOW ),gpio_put ( pinRGB_green, LOW );
+    gpio_put ( pinRGB_red, !gpio_get ( pinRGB_red ) );
+}
+/*-----------------------------------------------------------*/
+
 void Mef_init ( void )
 {
     Est_mef = IDLE;
@@ -364,7 +446,7 @@ void Mef_init ( void )
 
 void Mef ( void )
 {
-    switch (Est_mef)
+    switch ( Est_mef )
     {
         case IDLE:
         {
@@ -377,20 +459,72 @@ void Mef ( void )
             // Prende el lez azul de estado inactivo
             gpio_put ( pinRGB_blue, HIGH );
             // Detecta cuando se pulsa la opcion
-            if ( bEncPush )
+            if ( gpio_get ( pinENCODER_PUSH ) )
             {
                 if ( ucEncCont == 0)         Modo = MODO_PULV;
                 else if ( ucEncCont == 1)    Modo = MODO_FLUJO;
                 else if ( ucEncCont == 2 )   Modo = MODO_FUGA;
+                
+                Est_mef = SET_DATE;     // Pasamos al modo de configuracion
+                Select = RPM_CONFIG;    // Seteamos en la nextion la pagina de rpm config
+                ucEncCont = 0;          // Limpiamos el contador o selector
+
+                gpio_put ( pinRGB_blue, LOW );
+
+                xTimerStart ( xConfigTimer,0 ); // Activamos el timer
+                
+                // Setea tipo de modo a la pantalla
+                printf ( "page pMenuRPM" );
+                SentData_Nextion ();
+                // printf ( "Configuracion RPM:\n" );
 
                 Antirrebote ();
             }
-            if ( Modo != IDLE )  ucEncCont = 0;
         break;
         }
         case SET_DATE:
         {
+            // Solamente para modo pulverizacion
+            if ( Modo == MODO_PULV && Select == PWM_CONFIG )
+            {
+                strData_iny.ucPwm_value = ucEncCont;    // Almacena el valor del contador del encoder en el pwm
+                if ( gpio_get ( pinENCODER_PUSH ) )
+                    Select = SEG_CONFIG, ucEncCont = 0, Antirrebote ();
+            }
+            else if ( Modo == MODO_PULV && Select == RPM_CONFIG )
+            {
+                strData_iny.usRpm_value = ucEncCont;    // Almacena el valor del contador como valor de rpm
+                if ( gpio_get ( pinENCODER_PUSH ) )
+                {
+                    Select = PWM_CONFIG; 
+                    ucEncCont = 0;
+                    Antirrebote (); // Cambiamos de configuracion y limpiados el contador
+                    printf ( "Configuracion PWM:\n" );
+                }
+            }
+            else if ( Modo == MODO_FUGA )
+                strData_iny.ucPwm_value = 0, strData_iny.usRpm_value = 0;
+            else if ( Modo == MODO_FLUJO )
+                strData_iny.ucPwm_value = 100, strData_iny.usRpm_value = 10000;
 
+            // Para los tres modos
+            if ( Select == SEG_CONFIG )
+            {
+
+            }
+            else if ( Select == MIN_CONFIG )
+            {
+
+            }
+            else if ( Select == HOR_CONFIG )
+            {
+
+            }
+
+            // Detectamos si se pulsa el avanzar o select
+            if ( pinSELECT )
+                Select++, Antirrebote(), ucEncCont = 0;
+            
         break;
         }
         case MODO_FLUJO:
@@ -415,11 +549,203 @@ void Mef ( void )
 
 void Antirrebote ( void )
 {
-    vTaskDelay ( ANT_DELAY );
-    gpio_put ( pinBUZZER,HIGH );
-    vTaskDelay ( ANT_DELAY );
-    gpio_put ( pinBUZZER,LOW );
+    gpio_put ( pinBUZZER, HIGH );
+    vTaskDelay ( DELAY_60ms );
+    gpio_put ( pinBUZZER, LOW );
+
+    while ( gpio_get ( pinENCODER_PUSH ) )
+    {
+        vTaskDelay ( DELAY_60ms );
+    }
 
     return;
 }
 /*-----------------------------------------------------------*/
+
+void SentData_Nextion ( void )
+{
+    printf ( "\xFF\xFF\xFF" );
+}
+/*-----------------------------------------------------------*/
+
+void vISR_uartrx ( void )
+{
+    BaseType_t xHigherPriorityTaskWoken;
+
+    xHigherPriorityTaskWoken = pdFALSE;
+
+    xSemaphoreGiveFromISR ( xUartRxSemaphore,&xHigherPriorityTaskWoken );
+    // portYIELD_FROM_ISR ();
+    portYIELD_FROM_ISR ( xHigherPriorityTaskWoken );
+}
+/*-----------------------------------------------------------*/
+
+static void vISR_uartrx_Task ( void *pvParameter )
+{
+    while (1)
+    {
+        if ( xSemaphoreTake ( xUartRxSemaphore,DELAY_500ms ) == pdPASS )
+        {
+            while (uart_is_readable(UART_ID))
+            {
+                char cRx;
+                cRx = uart_getc(UART_ID);
+                if(cRx != 0x0A )    // Ultimo valor leido es el salto de linea ( 0x0A o 10 )
+                {
+                    cStringRx[ucIndice] = cRx;
+                    ucIndice++;
+                }
+                else
+                    bStringComplete = true;
+                // uart_putc(UART_ID, cRx);
+            }
+        }
+    }
+    vTaskDelete ( NULL );
+}
+/*-----------------------------------------------------------*/
+
+void vISR_gpioAcallback ( uint gpio, uint32_t events )
+{
+    BaseType_t xHigherPriorityTaskWoken;
+    
+    xHigherPriorityTaskWoken = pdFALSE;
+
+    if ( !bEncAB )
+    {
+        if ( events == GPIO_IRQ_EDGE_RISE )
+            xSemaphoreGiveFromISR ( xEncA_rising, &xHigherPriorityTaskWoken );
+        else
+            xSemaphoreGiveFromISR ( xEncA_falling, &xHigherPriorityTaskWoken );
+        
+        bEncAB = true;
+    }
+
+    xTimerResetFromISR ( xAntirreboteTimer, &xHigherPriorityTaskWoken );
+    xTimerStartFromISR ( xAntirreboteTimer, &xHigherPriorityTaskWoken );
+    
+    portYIELD_FROM_ISR ( xHigherPriorityTaskWoken );
+}
+/*-----------------------------------------------------------*/
+
+static void vISR_pinA_edgeRising ( void *pvParameter )
+{
+    while (1)
+    {
+        // Espera a tomar el semaforo dado en la interrupcion    
+        if ( xSemaphoreTake ( xEncA_rising,portMAX_DELAY ) == pdPASS )
+        {
+                if ( !gpio_get ( pinENCODER_B ) && gpio_get ( pinENCODER_A ) )
+                    ModSelect ( true );
+                else if ( gpio_get ( pinENCODER_B ) && gpio_get ( pinENCODER_A ) )
+                    ModSelect ( false );
+        }
+    }
+    vTaskDelete ( NULL );    
+}
+/*-----------------------------------------------------------*/
+
+static void vISR_pinA_edgeFalling ( void *pvParameter )
+{
+    while (1)
+    {
+        // Espera a tomar el semaforo dado en la interrupcion    
+        if ( xSemaphoreTake ( xEncA_falling,portMAX_DELAY ) == pdPASS )
+        {
+            if ( gpio_get ( pinENCODER_B ) && !gpio_get ( pinENCODER_A ) )
+                ModSelect ( true );
+            else if ( !gpio_get ( pinENCODER_B ) && !gpio_get ( pinENCODER_A ) )
+                ModSelect ( false );
+        }
+    }
+    vTaskDelete ( NULL );    
+}
+/*-----------------------------------------------------------*/
+
+void ModSelect ( uint8_t valor )
+{
+    if ( Modo == IDLE )
+    {
+        // Aumenta o disminuye el valor de la seleccion
+        if ( valor )
+            ucEncCont++;
+        else
+            ucEncCont--;
+        
+        // Configura segun el modo e imprime el modo seleccionado
+        if ( ucEncCont > 2 )    ucEncCont = 0;
+        if ( ucEncCont == 0 )
+        {
+            uart_puts ( UART_ID,"bSelect.txt=\"PULV\"" );
+            SentData_Nextion ();
+            // printf ( "tIzquierda.txt=\"Flujo\"");
+            // SentData_Nextion ();
+            // printf ( "tDerecha.txt=\"Fuga\"" );
+            // SentData_Nextion ();
+        }
+        else if ( ucEncCont == 1 )
+        {
+            uart_puts ( UART_ID,"bSelect.txt=\"FUGA\"" );
+            SentData_Nextion ();
+            // printf ( "tIzquierda.txt=\"Flujo\"");
+            // SentData_Nextion ();
+            // printf ( "tDerecha.txt=\"Pulv\"" );
+            // SentData_Nextion ();
+        }
+        else if ( ucEncCont == 2 )
+        {
+            uart_puts ( UART_ID,"tSelect.txt=\"FLUJO\"" );
+            SentData_Nextion ();
+            // printf ( "tIzquierda.txt=\"Pulv\"");
+            // SentData_Nextion ();
+            // printf ( "tDerecha.txt=\"Fuga\"" );
+            // SentData_Nextion ();
+        }
+    }
+    else if ( Modo == SET_DATE )
+    {
+        // Tipo de configuracion
+        if ( Select == RPM_CONFIG )
+        {
+            if ( valor )
+            {
+                if ( ucEncCont <= 9900 )
+                    ucEncCont+=100;
+            }
+            else
+            {   
+                if ( ucEncCont >= 100 )
+                    ucEncCont-=100;
+            }
+        }
+        // Tipo de configuracion
+        if ( Select == PWM_CONFIG )
+        {
+            if ( valor )
+            {
+                if ( ucEncCont <= 90 )
+                    ucEncCont+=10;
+            }
+            else
+            {   
+                if ( ucEncCont >= 10 )
+                    ucEncCont-=10;
+            }
+        }
+        printf ( "PWM set:%d\n", strData_iny.ucPwm_value );
+        printf ( "RPM set:%d\n", strData_iny.usRpm_value );
+    }
+
+    // Imprime el valor del contador
+    // printf ( "Valor:%d\n", ucEncCont );
+
+    // Activa el buzzer 
+    gpio_put ( pinBUZZER,HIGH );
+    vTaskDelay ( DELAY_30ms );
+    gpio_put ( pinBUZZER,LOW );
+    vTaskDelay ( DELAY_15ms );
+    
+    return;
+}
+/*-----------------------------------------------------------*/
+
