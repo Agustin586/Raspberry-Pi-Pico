@@ -2124,7 +2124,11 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\include\pico\printf.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
 
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c
@@ -2228,17 +2232,13 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h
+CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\include\hardware\pll.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pll.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pll.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\clocks.h
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\clocks.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\defs.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\structure.h
-CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h
 
 
 CMakeFiles\inyectores.dir\main.c.obj: ..\main.c
@@ -2322,7 +2322,7 @@ CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h
-CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h
+CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\include\pico\multicore.h
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include\pico\sync.h
 CMakeFiles\inyectores.dir\main.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include\pico\sem.h
@@ -2752,10 +2752,8 @@ C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c:
 
 C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h:
 
-C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h:
+C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h:
 
 C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c:
-
-C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h:
 
 ..\main.c:

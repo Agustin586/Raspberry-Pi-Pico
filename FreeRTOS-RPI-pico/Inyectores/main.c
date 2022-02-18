@@ -169,12 +169,12 @@ TimerHandle_t xAntirreboteTimer,xConfigTimer;
 #endif
 
 static void prvNonRTOSWorker() {
-    printf("Core %d: Doing regular SDK stuff\n", get_core_num());
+    // printf("Core %d: Doing regular SDK stuff\n", get_core_num());
     
 }
 
 static void prvLaunchRTOS() {
-    printf("Core %d: Launching FreeRTOS scheduler\n", get_core_num());
+    // printf("Core %d: Launching FreeRTOS scheduler\n", get_core_num());
     /* Start the tasks and timer running. */
     vTaskStartScheduler();
     /* should never reach here */
@@ -221,7 +221,7 @@ int main(void)
     */
     xBlinkTimer = xTimerCreate ( "BLINK",DELAY_500ms,pdTRUE,0,prvBlinkTimer );
     xPwmEnableTimer = xTimerCreate ( "BLINK_PWM",DELAY_300ms,pdTRUE,0,prvPwmEnableTimer );
-    xAntirreboteTimer = xTimerCreate ( "ANTIRREBOTE",DELAY_20ms,pdFALSE,0,prvEncoderAntirrebote );
+    xAntirreboteTimer = xTimerCreate ( "ANTIRREBOTE",DELAY_15ms,pdFALSE,0,prvEncoderAntirrebote );
     xConfigTimer = xTimerCreate ( "CONFIG",DELAY_200ms,pdTRUE,0,prvConfigTimer );
 
     // Inicia el/los timer/s
@@ -437,6 +437,9 @@ static void prvConfigTimer ( TimerHandle_t xTimer )
 
 void Mef_init ( void )
 {
+    uart_puts ( UART_ID, "page pMenuInicio" );
+    SentData_Nextion ();
+    vTaskDelay ( DELAY_15ms );
     Est_mef = IDLE;
     Modo = IDLE;
 
@@ -448,97 +451,85 @@ void Mef ( void )
 {
     switch ( Est_mef )
     {
+        // Entra en modo de reposo
         case IDLE:
         {
+            Modo = IDLE;
+
             // Apaga los leds rojo y verde
             if ( gpio_get ( pinRGB_red ) || gpio_get ( pinRGB_green ) )
             {
                 gpio_put ( pinRGB_red, LOW );
                 gpio_put ( pinRGB_green, LOW );  
             }
+
             // Prende el lez azul de estado inactivo
             gpio_put ( pinRGB_blue, HIGH );
+
             // Detecta cuando se pulsa la opcion
             if ( gpio_get ( pinENCODER_PUSH ) )
             {
-                if ( ucEncCont == 0)         Modo = MODO_PULV;
-                else if ( ucEncCont == 1)    Modo = MODO_FLUJO;
-                else if ( ucEncCont == 2 )   Modo = MODO_FUGA;
+                if ( ucEncCont == 0)         Est_mef = MODO_PULV;   // Modo de pulverizacion
+                else if ( ucEncCont == 1)    Est_mef = MODO_FLUJO;  // Modo de flujo
+                else if ( ucEncCont == 2 )   Est_mef = MODO_FUGA;   // Modo de fuga
                 
-                Est_mef = SET_DATE;     // Pasamos al modo de configuracion
-                Select = RPM_CONFIG;    // Seteamos en la nextion la pagina de rpm config
-                ucEncCont = 0;          // Limpiamos el contador o selector
+                Select = RPM_CONFIG;            // Seteamos en la nextion la pagina de rpm config
+                ucEncCont = 0;                  // Limpiamos el contador o selector
 
-                gpio_put ( pinRGB_blue, LOW );
-
+                gpio_put ( pinRGB_blue, LOW );  // Apaga el led azul
                 xTimerStart ( xConfigTimer,0 ); // Activamos el timer
                 
-                // Setea tipo de modo a la pantalla
-                printf ( "page pMenuRPM" );
+                // Envia datos a la nextion
+                uart_puts ( UART_ID, "page pMenuRPM" );     // Cambia de pagina
                 SentData_Nextion ();
-                // printf ( "Configuracion RPM:\n" );
 
                 Antirrebote ();
             }
         break;
         }
-        case SET_DATE:
+        // Configura los parametros para el modo flujo
+        case MODO_PULV:
         {
-            // Solamente para modo pulverizacion
-            if ( Modo == MODO_PULV && Select == PWM_CONFIG )
+            Modo = MODO_PULV;
+
+            switch ( Select )
             {
-                strData_iny.ucPwm_value = ucEncCont;    // Almacena el valor del contador del encoder en el pwm
-                if ( gpio_get ( pinENCODER_PUSH ) )
-                    Select = SEG_CONFIG, ucEncCont = 0, Antirrebote ();
-            }
-            else if ( Modo == MODO_PULV && Select == RPM_CONFIG )
-            {
-                strData_iny.usRpm_value = ucEncCont;    // Almacena el valor del contador como valor de rpm
-                if ( gpio_get ( pinENCODER_PUSH ) )
+                case RPM_CONFIG:
                 {
-                    Select = PWM_CONFIG; 
-                    ucEncCont = 0;
-                    Antirrebote (); // Cambiamos de configuracion y limpiados el contador
-                    printf ( "Configuracion PWM:\n" );
+                    // Carga el valor de rpm
+                    strData_iny.usRpm_value = ucEncCont;
+                    
+                    // Detecta pulsador del encoder
+                    if ( gpio_get ( pinENCODER_PUSH ) )
+                    {
+                        Select = PWM_CONFIG;    // Configura el pwm
+                        ucEncCont = 0;          // Reinicia el contador
+                        Antirrebote ();
+                    }
+                break;
                 }
+                case PWM_CONFIG:
+                {
+                    strData_iny.ucPwm_value = ucEncCont;    // Carga el valor del pwm
+                    if ( gpio_get ( pinENCODER_PUSH ) )
+                        Select = SEG_CONFIG, ucEncCont = 0, Antirrebote ();
+                break;
+                }
+                
             }
-            else if ( Modo == MODO_FUGA )
-                strData_iny.ucPwm_value = 0, strData_iny.usRpm_value = 0;
-            else if ( Modo == MODO_FLUJO )
-                strData_iny.ucPwm_value = 100, strData_iny.usRpm_value = 10000;
-
-            // Para los tres modos
-            if ( Select == SEG_CONFIG )
-            {
-
-            }
-            else if ( Select == MIN_CONFIG )
-            {
-
-            }
-            else if ( Select == HOR_CONFIG )
-            {
-
-            }
-
-            // Detectamos si se pulsa el avanzar o select
-            if ( pinSELECT )
-                Select++, Antirrebote(), ucEncCont = 0;
             
         break;
         }
         case MODO_FLUJO:
         {
-
-        break;
-        }
-        case MODO_PULV:
-        {
+            Modo = MODO_PULV;
 
         break;
         }
         case MODO_FUGA:
         {
+            Modo = MODO_FUGA;
+
 
         break;
         }
@@ -664,47 +655,53 @@ static void vISR_pinA_edgeFalling ( void *pvParameter )
 
 void ModSelect ( uint8_t valor )
 {
+    char buffer_send[30];
+
     if ( Modo == IDLE )
     {
-        // Aumenta o disminuye el valor de la seleccion
+        // // Aumenta o disminuye el valor de la seleccion
         if ( valor )
             ucEncCont++;
         else
             ucEncCont--;
         
-        // Configura segun el modo e imprime el modo seleccionado
-        if ( ucEncCont > 2 )    ucEncCont = 0;
+        if ( ucEncCont > 2 )    ucEncCont = 0;  // Reinicia la cuenta
+        
+        // sprintf ( buffer_send, "Valor:%d\n", ucEncCont );
+        // uart_puts ( UART_ID, buffer_send );
+        // uart_putc ( UART_ID, 13 );
+        // Envia datos segun se encuentra en cada seleccion
         if ( ucEncCont == 0 )
         {
-            uart_puts ( UART_ID,"bSelect.txt=\"PULV\"" );
+            uart_puts ( UART_ID, "ref 0" );
             SentData_Nextion ();
-            // printf ( "tIzquierda.txt=\"Flujo\"");
-            // SentData_Nextion ();
-            // printf ( "tDerecha.txt=\"Fuga\"" );
-            // SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
+            uart_puts ( UART_ID, "draw 18,129,109,200,RED" );
+            SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
         }
         else if ( ucEncCont == 1 )
         {
-            uart_puts ( UART_ID,"bSelect.txt=\"FUGA\"" );
+            uart_puts ( UART_ID, "ref 0" );
             SentData_Nextion ();
-            // printf ( "tIzquierda.txt=\"Flujo\"");
-            // SentData_Nextion ();
-            // printf ( "tDerecha.txt=\"Pulv\"" );
-            // SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
+            uart_puts ( UART_ID, "draw 116,128,207,200,RED" );
+            SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
         }
         else if ( ucEncCont == 2 )
         {
-            uart_puts ( UART_ID,"tSelect.txt=\"FLUJO\"" );
+            uart_puts ( UART_ID, "ref 0" );
             SentData_Nextion ();
-            // printf ( "tIzquierda.txt=\"Pulv\"");
-            // SentData_Nextion ();
-            // printf ( "tDerecha.txt=\"Fuga\"" );
-            // SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
+            uart_puts ( UART_ID, "draw 212,129,303,200,RED" );
+            SentData_Nextion ();
+            vTaskDelay ( DELAY_15ms );
         }
     }
-    else if ( Modo == SET_DATE )
+    else if ( Modo == MODO_PULV )
     {
-        // Tipo de configuracion
+        // Configuracion de RPM
         if ( Select == RPM_CONFIG )
         {
             if ( valor )
@@ -718,7 +715,7 @@ void ModSelect ( uint8_t valor )
                     ucEncCont-=100;
             }
         }
-        // Tipo de configuracion
+        // Configuracion PWM
         if ( Select == PWM_CONFIG )
         {
             if ( valor )
@@ -732,13 +729,14 @@ void ModSelect ( uint8_t valor )
                     ucEncCont-=10;
             }
         }
-        printf ( "PWM set:%d\n", strData_iny.ucPwm_value );
-        printf ( "RPM set:%d\n", strData_iny.usRpm_value );
+
+        // Envia los datos al puerto serial
+        sprintf ( buffer_send, "PWM set:%d\n", strData_iny.ucPwm_value );
+        uart_puts ( UART_ID, buffer_send );
+        sprintf ( buffer_send, "RPM set:%d\n", strData_iny.usRpm_value );
+        uart_puts ( UART_ID, buffer_send );
     }
-
-    // Imprime el valor del contador
-    // printf ( "Valor:%d\n", ucEncCont );
-
+    
     // Activa el buzzer 
     gpio_put ( pinBUZZER,HIGH );
     vTaskDelay ( DELAY_30ms );
