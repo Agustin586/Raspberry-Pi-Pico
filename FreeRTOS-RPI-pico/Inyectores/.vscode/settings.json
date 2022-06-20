@@ -1,6 +1,20 @@
 {
     "files.associations": {
         "multicore.h": "c",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "uart.h": "c",
+        "cstdio": "c",
+        "bit": "c",
+        "compare": "c",
+        "cstddef": "c",
+        "limits": "c",
+        "type_traits": "c",
+        "xutility": "c",
+        "b_control.h": "c",
+        "configfreertos.h": "c",
+        "b_nextion.h": "c",
+        "mef.h": "c",
+        "defines.h": "c",
+        "stdint.h": "c"
     }
 }

@@ -170,6 +170,54 @@ bs2_default_padded_checksummed_asm\fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build
 .PHONY : bs2_default_padded_checksummed_asm\fast
 
+B_Control.obj: B_Control.c.obj
+.PHONY : B_Control.obj
+
+# target to build an object file
+B_Control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Control.c.obj
+.PHONY : B_Control.c.obj
+
+B_Control.i: B_Control.c.i
+.PHONY : B_Control.i
+
+# target to preprocess a source file
+B_Control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Control.c.i
+.PHONY : B_Control.c.i
+
+B_Control.s: B_Control.c.s
+.PHONY : B_Control.s
+
+# target to generate assembly for a file
+B_Control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Control.c.s
+.PHONY : B_Control.c.s
+
+B_Nextion.obj: B_Nextion.c.obj
+.PHONY : B_Nextion.obj
+
+# target to build an object file
+B_Nextion.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Nextion.c.obj
+.PHONY : B_Nextion.c.obj
+
+B_Nextion.i: B_Nextion.c.i
+.PHONY : B_Nextion.i
+
+# target to preprocess a source file
+B_Nextion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Nextion.c.i
+.PHONY : B_Nextion.c.i
+
+B_Nextion.s: B_Nextion.c.s
+.PHONY : B_Nextion.s
+
+# target to generate assembly for a file
+B_Nextion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\B_Nextion.c.s
+.PHONY : B_Nextion.c.s
+
 C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.obj: C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
 .PHONY : C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.obj
 
@@ -1362,6 +1410,78 @@ C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
 .PHONY : C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
 
+ConfigFreeRtos.obj: ConfigFreeRtos.c.obj
+.PHONY : ConfigFreeRtos.obj
+
+# target to build an object file
+ConfigFreeRtos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj
+.PHONY : ConfigFreeRtos.c.obj
+
+ConfigFreeRtos.i: ConfigFreeRtos.c.i
+.PHONY : ConfigFreeRtos.i
+
+# target to preprocess a source file
+ConfigFreeRtos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\ConfigFreeRtos.c.i
+.PHONY : ConfigFreeRtos.c.i
+
+ConfigFreeRtos.s: ConfigFreeRtos.c.s
+.PHONY : ConfigFreeRtos.s
+
+# target to generate assembly for a file
+ConfigFreeRtos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\ConfigFreeRtos.c.s
+.PHONY : ConfigFreeRtos.c.s
+
+Mef.obj: Mef.c.obj
+.PHONY : Mef.obj
+
+# target to build an object file
+Mef.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\Mef.c.obj
+.PHONY : Mef.c.obj
+
+Mef.i: Mef.c.i
+.PHONY : Mef.i
+
+# target to preprocess a source file
+Mef.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\Mef.c.i
+.PHONY : Mef.c.i
+
+Mef.s: Mef.c.s
+.PHONY : Mef.s
+
+# target to generate assembly for a file
+Mef.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\Mef.c.s
+.PHONY : Mef.c.s
+
+RTC_DS3231.obj: RTC_DS3231.c.obj
+.PHONY : RTC_DS3231.obj
+
+# target to build an object file
+RTC_DS3231.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\RTC_DS3231.c.obj
+.PHONY : RTC_DS3231.c.obj
+
+RTC_DS3231.i: RTC_DS3231.c.i
+.PHONY : RTC_DS3231.i
+
+# target to preprocess a source file
+RTC_DS3231.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\RTC_DS3231.c.i
+.PHONY : RTC_DS3231.c.i
+
+RTC_DS3231.s: RTC_DS3231.c.s
+.PHONY : RTC_DS3231.s
+
+# target to generate assembly for a file
+RTC_DS3231.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\inyectores.dir\RTC_DS3231.c.s
+.PHONY : RTC_DS3231.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -1399,6 +1519,12 @@ help:
 	@echo ... bs2_default_padded_checksummed_asm
 	@echo ... bs2_default
 	@echo ... inyectores
+	@echo ... B_Control.obj
+	@echo ... B_Control.i
+	@echo ... B_Control.s
+	@echo ... B_Nextion.obj
+	@echo ... B_Nextion.i
+	@echo ... B_Nextion.s
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.obj
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.i
 	@echo ... C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.s
@@ -1548,6 +1674,15 @@ help:
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+	@echo ... ConfigFreeRtos.obj
+	@echo ... ConfigFreeRtos.i
+	@echo ... ConfigFreeRtos.s
+	@echo ... Mef.obj
+	@echo ... Mef.i
+	@echo ... Mef.s
+	@echo ... RTC_DS3231.obj
+	@echo ... RTC_DS3231.i
+	@echo ... RTC_DS3231.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

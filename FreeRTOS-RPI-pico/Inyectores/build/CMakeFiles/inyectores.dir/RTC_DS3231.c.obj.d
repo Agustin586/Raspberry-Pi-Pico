@@ -1,6 +1,13 @@
-CMakeFiles\inyectores.dir\main.c.obj: \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\main.c \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.h \
+CMakeFiles\inyectores.dir\RTC_DS3231.c.obj: \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.c \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.h \
+ c\:\progra~2\gnuarm~1\102020~1\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\stdint.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\machine\_default_types.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\features.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\_newlib_version.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_intsup.h \
+ c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_stdint.h \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Includes.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
@@ -11,15 +18,8 @@ CMakeFiles\inyectores.dir\main.c.obj: \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\assert.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\_ansi.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\newlib.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\_newlib_version.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\config.h \
  c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\machine\ieeefp.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\features.h \
- c\:\progra~2\gnuarm~1\102020~1\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\stdint.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\machine\_default_types.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_intsup.h \
- c\:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_stdint.h \
  c\:\progra~2\gnuarm~1\102020~1\lib\gcc\arm-none-eabi\10.2.1\include\stddef.h \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\generated\pico_base/pico/version.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_base\include/pico/config.h \

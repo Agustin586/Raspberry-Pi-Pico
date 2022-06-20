@@ -1,6 +1,6 @@
-CMakeFiles\inyectores.dir\main.c.obj: \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\main.c \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.h \
+CMakeFiles\inyectores.dir\B_Control.c.obj: \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Control.c \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Control.h \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Includes.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
@@ -103,4 +103,7 @@ CMakeFiles\inyectores.dir\main.c.obj: \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/timers.h \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/semphr.h \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/queue.h \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Defines.h
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Defines.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.h

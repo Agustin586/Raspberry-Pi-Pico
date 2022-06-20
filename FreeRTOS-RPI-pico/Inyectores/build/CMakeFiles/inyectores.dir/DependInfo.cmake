@@ -120,6 +120,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/B_Control.c" "CMakeFiles/inyectores.dir/B_Control.c.obj" "gcc" "CMakeFiles/inyectores.dir/B_Control.c.obj.d"
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/B_Nextion.c" "CMakeFiles/inyectores.dir/B_Nextion.c.obj" "gcc" "CMakeFiles/inyectores.dir/B_Nextion.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj.d"
@@ -165,6 +167,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/ConfigFreeRtos.c" "CMakeFiles/inyectores.dir/ConfigFreeRtos.c.obj" "gcc" "CMakeFiles/inyectores.dir/ConfigFreeRtos.c.obj.d"
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/Mef.c" "CMakeFiles/inyectores.dir/Mef.c.obj" "gcc" "CMakeFiles/inyectores.dir/Mef.c.obj.d"
+  "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/RTC_DS3231.c" "CMakeFiles/inyectores.dir/RTC_DS3231.c.obj" "gcc" "CMakeFiles/inyectores.dir/RTC_DS3231.c.obj.d"
   "C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/main.c" "CMakeFiles/inyectores.dir/main.c.obj" "gcc" "CMakeFiles/inyectores.dir/main.c.obj.d"
   "C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )

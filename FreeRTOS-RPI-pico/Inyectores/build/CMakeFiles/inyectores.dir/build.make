@@ -72,10 +72,80 @@ CMakeFiles\inyectores.dir\main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/main.c.s"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\main.c -o CMakeFiles\inyectores.dir\main.c.s
 
+CMakeFiles\inyectores.dir\Mef.c.obj: CMakeFiles\inyectores.dir\flags.make
+CMakeFiles\inyectores.dir\Mef.c.obj: ..\Mef.c
+CMakeFiles\inyectores.dir\Mef.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/inyectores.dir/Mef.c.obj"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\Mef.c.obj -MF CMakeFiles\inyectores.dir\Mef.c.obj.d -o CMakeFiles\inyectores.dir\Mef.c.obj -c C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Mef.c
+
+CMakeFiles\inyectores.dir\Mef.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inyectores.dir/Mef.c.i"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Mef.c > CMakeFiles\inyectores.dir\Mef.c.i
+
+CMakeFiles\inyectores.dir\Mef.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/Mef.c.s"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Mef.c -o CMakeFiles\inyectores.dir\Mef.c.s
+
+CMakeFiles\inyectores.dir\B_Nextion.c.obj: CMakeFiles\inyectores.dir\flags.make
+CMakeFiles\inyectores.dir\B_Nextion.c.obj: ..\B_Nextion.c
+CMakeFiles\inyectores.dir\B_Nextion.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/inyectores.dir/B_Nextion.c.obj"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\B_Nextion.c.obj -MF CMakeFiles\inyectores.dir\B_Nextion.c.obj.d -o CMakeFiles\inyectores.dir\B_Nextion.c.obj -c C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.c
+
+CMakeFiles\inyectores.dir\B_Nextion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inyectores.dir/B_Nextion.c.i"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.c > CMakeFiles\inyectores.dir\B_Nextion.c.i
+
+CMakeFiles\inyectores.dir\B_Nextion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/B_Nextion.c.s"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.c -o CMakeFiles\inyectores.dir\B_Nextion.c.s
+
+CMakeFiles\inyectores.dir\B_Control.c.obj: CMakeFiles\inyectores.dir\flags.make
+CMakeFiles\inyectores.dir\B_Control.c.obj: ..\B_Control.c
+CMakeFiles\inyectores.dir\B_Control.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/inyectores.dir/B_Control.c.obj"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\B_Control.c.obj -MF CMakeFiles\inyectores.dir\B_Control.c.obj.d -o CMakeFiles\inyectores.dir\B_Control.c.obj -c C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Control.c
+
+CMakeFiles\inyectores.dir\B_Control.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inyectores.dir/B_Control.c.i"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Control.c > CMakeFiles\inyectores.dir\B_Control.c.i
+
+CMakeFiles\inyectores.dir\B_Control.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/B_Control.c.s"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Control.c -o CMakeFiles\inyectores.dir\B_Control.c.s
+
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj: CMakeFiles\inyectores.dir\flags.make
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj: ..\ConfigFreeRtos.c
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/inyectores.dir/ConfigFreeRtos.c.obj"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj -MF CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj.d -o CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj -c C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.c
+
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inyectores.dir/ConfigFreeRtos.c.i"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.c > CMakeFiles\inyectores.dir\ConfigFreeRtos.c.i
+
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/ConfigFreeRtos.c.s"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.c -o CMakeFiles\inyectores.dir\ConfigFreeRtos.c.s
+
+CMakeFiles\inyectores.dir\RTC_DS3231.c.obj: CMakeFiles\inyectores.dir\flags.make
+CMakeFiles\inyectores.dir\RTC_DS3231.c.obj: ..\RTC_DS3231.c
+CMakeFiles\inyectores.dir\RTC_DS3231.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/inyectores.dir/RTC_DS3231.c.obj"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\RTC_DS3231.c.obj -MF CMakeFiles\inyectores.dir\RTC_DS3231.c.obj.d -o CMakeFiles\inyectores.dir\RTC_DS3231.c.obj -c C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.c
+
+CMakeFiles\inyectores.dir\RTC_DS3231.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/inyectores.dir/RTC_DS3231.c.i"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.c > CMakeFiles\inyectores.dir\RTC_DS3231.c.i
+
+CMakeFiles\inyectores.dir\RTC_DS3231.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/inyectores.dir/RTC_DS3231.c.s"
+	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\RTC_DS3231.c -o CMakeFiles\inyectores.dir\RTC_DS3231.c.s
+
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i: cmake_force
@@ -89,7 +159,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portab
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/croutine.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.i: cmake_force
@@ -103,7 +173,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\crouti
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/event_groups.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.i: cmake_force
@@ -117,7 +187,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/list.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c.i: cmake_force
@@ -131,7 +201,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\list.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/queue.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.c.i: cmake_force
@@ -145,7 +215,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\queue.
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/stream_buffer.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream_buffer.c.i: cmake_force
@@ -159,7 +229,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\stream
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/tasks.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.c.i: cmake_force
@@ -173,7 +243,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\tasks.
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/timers.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers.c.i: cmake_force
@@ -187,7 +257,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\timers
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i: cmake_force
@@ -201,7 +271,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i: cmake_force
@@ -215,7 +285,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i: cmake_force
@@ -229,7 +299,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i: cmake_force
@@ -243,7 +313,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj: C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj -c C:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i: cmake_force
@@ -257,7 +327,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portab
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i: cmake_force
@@ -271,7 +341,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i: cmake_force
@@ -285,7 +355,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i: cmake_force
@@ -298,7 +368,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.i: cmake_force
@@ -312,7 +382,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_time/time.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\time.c.i: cmake_force
@@ -326,7 +396,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i: cmake_force
@@ -340,7 +410,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i: cmake_force
@@ -354,7 +424,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\sem.c.i: cmake_force
@@ -368,7 +438,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i: cmake_force
@@ -382,7 +452,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\mutex.c.i: cmake_force
@@ -396,7 +466,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i: cmake_force
@@ -410,7 +480,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\datetime.c.i: cmake_force
@@ -424,7 +494,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\pheap.c.i: cmake_force
@@ -438,7 +508,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_util\queue.c.i: cmake_force
@@ -452,7 +522,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\common\pico
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i: cmake_force
@@ -466,7 +536,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i: cmake_force
@@ -480,7 +550,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i: cmake_force
@@ -493,7 +563,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.i: cmake_force
@@ -507,7 +577,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i: cmake_force
@@ -521,7 +591,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i: cmake_force
@@ -535,7 +605,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i: cmake_force
@@ -549,7 +619,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i: cmake_force
@@ -563,7 +633,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i: cmake_force
@@ -576,7 +646,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.i: cmake_force
@@ -590,7 +660,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i: cmake_force
@@ -603,7 +673,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.i: cmake_force
@@ -616,7 +686,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.i: cmake_force
@@ -630,7 +700,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i: cmake_force
@@ -644,7 +714,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i: cmake_force
@@ -657,7 +727,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.i: cmake_force
@@ -670,7 +740,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.i: cmake_force
@@ -683,7 +753,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.i: cmake_force
@@ -697,7 +767,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i: cmake_force
@@ -711,7 +781,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i: cmake_force
@@ -724,7 +794,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.i: cmake_force
@@ -738,7 +808,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i: cmake_force
@@ -751,7 +821,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.i: cmake_force
@@ -764,7 +834,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj   -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.i: cmake_force
@@ -778,7 +848,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i: cmake_force
@@ -792,7 +862,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i: cmake_force
@@ -806,7 +876,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i: cmake_force
@@ -820,7 +890,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c.i: cmake_force
@@ -834,7 +904,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i: cmake_force
@@ -848,7 +918,7 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj: CMakeFiles\inyectores.dir\flags.make
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj: C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj: CMakeFiles\inyectores.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/inyectores.dir/C_/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj -MF CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj.d -o CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj -c C:\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c
 
 CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i: cmake_force
@@ -862,6 +932,11 @@ CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk\src\rp2_common\
 # Object files for target inyectores
 inyectores_OBJECTS = \
 "CMakeFiles\inyectores.dir\main.c.obj" \
+"CMakeFiles\inyectores.dir\Mef.c.obj" \
+"CMakeFiles\inyectores.dir\B_Nextion.c.obj" \
+"CMakeFiles\inyectores.dir\B_Control.c.obj" \
+"CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj" \
+"CMakeFiles\inyectores.dir\RTC_DS3231.c.obj" \
 "CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj" \
 "CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj" \
 "CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj" \
@@ -924,6 +999,11 @@ inyectores_OBJECTS = \
 inyectores_EXTERNAL_OBJECTS =
 
 inyectores.elf: CMakeFiles\inyectores.dir\main.c.obj
+inyectores.elf: CMakeFiles\inyectores.dir\Mef.c.obj
+inyectores.elf: CMakeFiles\inyectores.dir\B_Nextion.c.obj
+inyectores.elf: CMakeFiles\inyectores.dir\B_Control.c.obj
+inyectores.elf: CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj
+inyectores.elf: CMakeFiles\inyectores.dir\RTC_DS3231.c.obj
 inyectores.elf: CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
 inyectores.elf: CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\croutine.c.obj
 inyectores.elf: CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\event_groups.c.obj
@@ -984,7 +1064,7 @@ inyectores.elf: CMakeFiles\inyectores.dir\C_\Users\aguat\Documents\Pico\pico-sdk
 inyectores.elf: CMakeFiles\inyectores.dir\build.make
 inyectores.elf: pico-sdk\src\rp2_common\boot_stage2\bs2_default_padded_checksummed.S
 inyectores.elf: CMakeFiles\inyectores.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX executable inyectores.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Linking CXX executable inyectores.elf"
 	C:\PROGRA~2\GNUARM~1\102020~1\bin\AR10B2~1.EXE -mcpu=cortex-m0plus -mthumb -Og -g -Wl,--build-id=none --specs=nosys.specs -Wl,--wrap=sprintf -Wl,--wrap=snprintf -Wl,--wrap=vsnprintf -Wl,--wrap=__clzsi2 -Wl,--wrap=__clzdi2 -Wl,--wrap=__ctzsi2 -Wl,--wrap=__ctzdi2 -Wl,--wrap=__popcountsi2 -Wl,--wrap=__popcountdi2 -Wl,--wrap=__clz -Wl,--wrap=__clzl -Wl,--wrap=__clzll -Wl,--wrap=__aeabi_idiv -Wl,--wrap=__aeabi_idivmod -Wl,--wrap=__aeabi_ldivmod -Wl,--wrap=__aeabi_uidiv -Wl,--wrap=__aeabi_uidivmod -Wl,--wrap=__aeabi_uldivmod -Wl,--wrap=__aeabi_dadd -Wl,--wrap=__aeabi_ddiv -Wl,--wrap=__aeabi_dmul -Wl,--wrap=__aeabi_drsub -Wl,--wrap=__aeabi_dsub -Wl,--wrap=__aeabi_cdcmpeq -Wl,--wrap=__aeabi_cdrcmple -Wl,--wrap=__aeabi_cdcmple -Wl,--wrap=__aeabi_dcmpeq -Wl,--wrap=__aeabi_dcmplt -Wl,--wrap=__aeabi_dcmple -Wl,--wrap=__aeabi_dcmpge -Wl,--wrap=__aeabi_dcmpgt -Wl,--wrap=__aeabi_dcmpun -Wl,--wrap=__aeabi_i2d -Wl,--wrap=__aeabi_l2d -Wl,--wrap=__aeabi_ui2d -Wl,--wrap=__aeabi_ul2d -Wl,--wrap=__aeabi_d2iz -Wl,--wrap=__aeabi_d2lz -Wl,--wrap=__aeabi_d2uiz -Wl,--wrap=__aeabi_d2ulz -Wl,--wrap=__aeabi_d2f -Wl,--wrap=sqrt -Wl,--wrap=cos -Wl,--wrap=sin -Wl,--wrap=tan -Wl,--wrap=atan2 -Wl,--wrap=exp -Wl,--wrap=log -Wl,--wrap=ldexp -Wl,--wrap=copysign -Wl,--wrap=trunc -Wl,--wrap=floor -Wl,--wrap=ceil -Wl,--wrap=round -Wl,--wrap=sincos -Wl,--wrap=asin -Wl,--wrap=acos -Wl,--wrap=atan -Wl,--wrap=sinh -Wl,--wrap=cosh -Wl,--wrap=tanh -Wl,--wrap=asinh -Wl,--wrap=acosh -Wl,--wrap=atanh -Wl,--wrap=exp2 -Wl,--wrap=log2 -Wl,--wrap=exp10 -Wl,--wrap=log10 -Wl,--wrap=pow -Wl,--wrap=powint -Wl,--wrap=hypot -Wl,--wrap=cbrt -Wl,--wrap=fmod -Wl,--wrap=drem -Wl,--wrap=remainder -Wl,--wrap=remquo -Wl,--wrap=expm1 -Wl,--wrap=log1p -Wl,--wrap=fma -Wl,--wrap=__aeabi_lmul -Wl,--wrap=__aeabi_fadd -Wl,--wrap=__aeabi_fdiv -Wl,--wrap=__aeabi_fmul -Wl,--wrap=__aeabi_frsub -Wl,--wrap=__aeabi_fsub -Wl,--wrap=__aeabi_cfcmpeq -Wl,--wrap=__aeabi_cfrcmple -Wl,--wrap=__aeabi_cfcmple -Wl,--wrap=__aeabi_fcmpeq -Wl,--wrap=__aeabi_fcmplt -Wl,--wrap=__aeabi_fcmple -Wl,--wrap=__aeabi_fcmpge -Wl,--wrap=__aeabi_fcmpgt -Wl,--wrap=__aeabi_fcmpun -Wl,--wrap=__aeabi_i2f -Wl,--wrap=__aeabi_l2f -Wl,--wrap=__aeabi_ui2f -Wl,--wrap=__aeabi_ul2f -Wl,--wrap=__aeabi_f2iz -Wl,--wrap=__aeabi_f2lz -Wl,--wrap=__aeabi_f2uiz -Wl,--wrap=__aeabi_f2ulz -Wl,--wrap=__aeabi_f2d -Wl,--wrap=sqrtf -Wl,--wrap=cosf -Wl,--wrap=sinf -Wl,--wrap=tanf -Wl,--wrap=atan2f -Wl,--wrap=expf -Wl,--wrap=logf -Wl,--wrap=ldexpf -Wl,--wrap=copysignf -Wl,--wrap=truncf -Wl,--wrap=floorf -Wl,--wrap=ceilf -Wl,--wrap=roundf -Wl,--wrap=sincosf -Wl,--wrap=asinf -Wl,--wrap=acosf -Wl,--wrap=atanf -Wl,--wrap=sinhf -Wl,--wrap=coshf -Wl,--wrap=tanhf -Wl,--wrap=asinhf -Wl,--wrap=acoshf -Wl,--wrap=atanhf -Wl,--wrap=exp2f -Wl,--wrap=log2f -Wl,--wrap=exp10f -Wl,--wrap=log10f -Wl,--wrap=powf -Wl,--wrap=powintf -Wl,--wrap=hypotf -Wl,--wrap=cbrtf -Wl,--wrap=fmodf -Wl,--wrap=dremf -Wl,--wrap=remainderf -Wl,--wrap=remquof -Wl,--wrap=expm1f -Wl,--wrap=log1pf -Wl,--wrap=fmaf -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=free -Wl,--wrap=memcpy -Wl,--wrap=memset -Wl,--wrap=__aeabi_memcpy -Wl,--wrap=__aeabi_memset -Wl,--wrap=__aeabi_memcpy4 -Wl,--wrap=__aeabi_memset4 -Wl,--wrap=__aeabi_memcpy8 -Wl,--wrap=__aeabi_memset8 -Wl,-Map=inyectores.elf.map -Wl,--script=C:/Users/aguat/Documents/Pico/pico-sdk/src/rp2_common/pico_standard_link/memmap_default.ld -Wl,-z,max-page-size=4096 -Wl,--gc-sections -Wl,--wrap=printf -Wl,--wrap=vprintf -Wl,--wrap=puts -Wl,--wrap=putchar -Wl,--wrap=getchar @CMakeFiles\inyectores.dir\objects1.rsp -o inyectores.elf  pico-sdk\src\rp2_common\boot_stage2\bs2_default_padded_checksummed.S 
 	echo >nul && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Oihex C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/inyectores.elf inyectores.hex
 	echo >nul && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/aguat/Documents/GitHub/Raspberry-Pi-Pico/FreeRTOS-RPI-pico/Inyectores/build/inyectores.elf inyectores.bin

@@ -1,6 +1,6 @@
-CMakeFiles\inyectores.dir\main.c.obj: \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\main.c \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.h \
+CMakeFiles\inyectores.dir\B_Nextion.c.obj: \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.c \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\B_Nextion.h \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Includes.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \

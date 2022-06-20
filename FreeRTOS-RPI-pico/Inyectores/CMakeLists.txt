@@ -42,6 +42,18 @@ pico_sdk_init()
 #pico_enable_stdio_usb(on_core_one 1)
 add_executable( inyectores 
         main.c
+        Mef.h
+        Mef.c
+        B_Nextion.h
+        B_Nextion.c
+        B_Control.h
+        B_Control.c
+        ConfigFreeRtos.h
+        ConfigFreeRtos.c
+        Defines.h
+        Includes.h
+        RTC_DS3231.h
+        RTC_DS3231.c
         )
 target_include_directories(inyectores PRIVATE
 ${CMAKE_CURRENT_LIST_DIR}

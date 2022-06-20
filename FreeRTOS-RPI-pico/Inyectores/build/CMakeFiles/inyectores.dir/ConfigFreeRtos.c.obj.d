@@ -1,5 +1,5 @@
-CMakeFiles\inyectores.dir\main.c.obj: \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\main.c \
+CMakeFiles\inyectores.dir\ConfigFreeRtos.c.obj: \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.c \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\ConfigFreeRtos.h \
  C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Includes.h \
  C\:\Users\aguat\Documents\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
@@ -103,4 +103,5 @@ CMakeFiles\inyectores.dir\main.c.obj: \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/timers.h \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/semphr.h \
  C\:\Users\aguat\Documents\GitHub\FreeRTOS-Kernel\include/queue.h \
- C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Defines.h
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Defines.h \
+ C\:\Users\aguat\Documents\GitHub\Raspberry-Pi-Pico\FreeRTOS-RPI-pico\Inyectores\Mef.h
