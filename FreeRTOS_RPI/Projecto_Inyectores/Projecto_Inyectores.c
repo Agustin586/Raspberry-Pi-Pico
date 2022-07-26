@@ -98,7 +98,7 @@ static void prvSetupHardware( void )
     // Cargamos las entradas como una mascara de bits
     aux = ulConversorMascara ( pinENCODER_PUSH );
     input = input | aux;
-    aux = ulConversorMascara ( pinSELECT );
+    aux = ulConversorMascara ( pinDETENER );
     input = input | aux;
     aux = ulConversorMascara ( pinENCODER_A );
     input = input | aux;
@@ -126,15 +126,15 @@ static void prvSetupHardware( void )
     gpio_set_function ( pinINYECTORES, GPIO_FUNC_PWM );
     
     // UART init
-    uart_init ( UART_ID, BAUD_RATE );
-    gpio_set_function ( UART_TX_PIN, GPIO_FUNC_UART );
-    gpio_set_function ( UART_RX_PIN, GPIO_FUNC_UART );
-    uart_set_format ( UART_ID, DATA_BITS, STOP_BITS, PARITY );
-    uart_set_fifo_enabled ( UART_ID, false );
+    // uart_init ( UART_ID, BAUD_RATE );
+    // gpio_set_function ( UART_TX_PIN, GPIO_FUNC_UART );
+    // gpio_set_function ( UART_RX_PIN, GPIO_FUNC_UART );
+    // uart_set_format ( UART_ID, DATA_BITS, STOP_BITS, PARITY );
+    // uart_set_fifo_enabled ( UART_ID, false );
     
     // Interrupciones por cambio de flanco en pines
-    gpio_pull_up ( pinENCODER_A );
-    gpio_pull_up ( pinENCODER_B );
+    // gpio_pull_up ( pinENCODER_A );
+    // gpio_pull_up ( pinENCODER_B );
     gpio_set_irq_enabled_with_callback ( pinENCODER_A, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true, &vISR_gpioAcallback );
 
     // I2C
@@ -169,13 +169,13 @@ uint32_t potencia ( uint32_t base, uint8_t exponente )
 // Interrupciones
 void vISR_uartrx ( void )
 {
-    BaseType_t xHigherPriorityTaskWoken;
+    // BaseType_t xHigherPriorityTaskWoken;
 
-    xHigherPriorityTaskWoken = pdFALSE;
+    // xHigherPriorityTaskWoken = pdFALSE;
 
-    xSemaphoreGiveFromISR ( xUartRxSemaphore,&xHigherPriorityTaskWoken );
-    // portYIELD_FROM_ISR ();
-    portYIELD_FROM_ISR ( xHigherPriorityTaskWoken );
+    // xSemaphoreGiveFromISR ( xUartRxSemaphore,&xHigherPriorityTaskWoken );
+    // // portYIELD_FROM_ISR ();
+    // portYIELD_FROM_ISR ( xHigherPriorityTaskWoken );
 }
 void vISR_gpioAcallback ( uint gpio, uint32_t events )
 {
@@ -195,7 +195,7 @@ void vISR_gpioAcallback ( uint gpio, uint32_t events )
 
     xTimerResetFromISR ( xAntirreboteTimer, &xHigherPriorityTaskWoken );
     xTimerStartFromISR ( xAntirreboteTimer, &xHigherPriorityTaskWoken );
-    
+
     portYIELD_FROM_ISR ( xHigherPriorityTaskWoken );
 }
 

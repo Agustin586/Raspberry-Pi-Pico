@@ -133,6 +133,7 @@ void Nextion_Ms_SMx_TIMEs ( uint8_t seg )
     printf ( "nSeg.val=%u",seg );
     SentData_Nextion ();
 }
+// Actualiza la fecha y la hora
 void Nextion_Mr (  uint8_t hora, uint8_t min, uint8_t dia, uint8_t mes, uint8_t anio )
 {
     printf ( "tHora.txt=\"%02u:%02u\"",hora,min );              // Envia hora
@@ -150,6 +151,13 @@ void Nextion_Ms_SMx_SAtras ( void )
     uart_puts ( UART_ID, "page pMenuInicio");
     SentData_Nextion ();
 }
+// Pantalla de salida de señal
+void Nextion_Salida_Activado ( void )
+{
+    uart_puts ( UART_ID, "page pPwm");
+    SentData_Nextion ();
+}
+
 // **** //
 
 void SentData_Nextion ( void )

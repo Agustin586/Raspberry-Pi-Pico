@@ -27,7 +27,7 @@
 #define pinRGB_red      11
 #define pinRGB_green    12
 #define pinRGB_blue     13
-#define pinSELECT       21
+#define pinDETENER      21
 #define LED_rpi_pico    25
 #define GPIO_INPUT  false
 #define HIGH    1

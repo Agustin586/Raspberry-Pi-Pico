@@ -49,7 +49,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\tools\elf2uf2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\elf2uf2"
+CMAKE_BINARY_DIR = C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,18 +76,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\elf2uf2\CMakeFiles" "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers\\CMakeFiles\progress.marks"
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\CMakeFiles C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) boot_uf2_headers\all
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\elf2uf2\CMakeFiles" 0
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) boot_uf2_headers\clean
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
 .PHONY : clean
 
 # The main clean target
@@ -96,23 +96,23 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) boot_uf2_headers\preinstall
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) boot_uf2_headers\preinstall
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
 .PHONY : depend
 
 # Help Target
@@ -134,8 +134,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\elf2uf2\BOOT_U~1
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\elf2uf2\boot_uf2_headers
 .PHONY : cmake_check_build_system
 

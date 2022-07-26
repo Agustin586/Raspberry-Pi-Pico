@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

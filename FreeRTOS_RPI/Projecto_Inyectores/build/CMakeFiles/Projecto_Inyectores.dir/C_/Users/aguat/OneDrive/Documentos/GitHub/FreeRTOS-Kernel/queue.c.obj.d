@@ -36,9 +36,9 @@ CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\Fre
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_base\include/pico/types.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_base\include/pico/assert.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
- C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\GENERA~1\PICO_B~1/pico/version.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\generated\pico_base/pico/version.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\GENERA~1\PICO_B~1/pico/config_autogen.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\generated\pico_base/pico/config_autogen.h \
  C:/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/boards/include/boards/pico.h \
  C:/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  C:/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \

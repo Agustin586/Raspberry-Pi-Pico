@@ -43,6 +43,7 @@ void Nextion_Ms_SMx_TIMEs ( uint8_t seg );
 void Nextion_Mr (  uint8_t hora, uint8_t min, uint8_t dia, uint8_t mes, uint8_t anio ); // Menu:reloj --> Carga datos leidos del rtc
 void Nextion_Mt ( uint16_t Temperatura );   // Menu:temperatura
 void Nextion_Ms_SMx_SAtras ( void );
+void Nextion_Salida_Activado ( void );   
 void SentData_Nextion ( void );             // Envia los comandos para la pantalla
 
 #endif /* BLOQUE_NEXTION.H */

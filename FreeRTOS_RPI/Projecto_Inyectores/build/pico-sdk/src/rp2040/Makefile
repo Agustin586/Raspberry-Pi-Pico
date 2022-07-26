@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores"
+CMAKE_SOURCE_DIR = C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,18 +76,18 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\CMakeFiles" "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\pico-sdk\src\rp2040\\CMakeFiles\progress.marks"
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\CMakeFiles C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\all
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\CMakeFiles" 0
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\clean
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
 .PHONY : clean
 
 # The main clean target
@@ -96,23 +96,23 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\preinstall
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) pico-sdk\src\rp2040\preinstall
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
 .PHONY : depend
 
 # Help Target
@@ -134,8 +134,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\pico-sdk\src\rp2040
+	cd C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\pico-sdk\src\rp2040
 .PHONY : cmake_check_build_system
 

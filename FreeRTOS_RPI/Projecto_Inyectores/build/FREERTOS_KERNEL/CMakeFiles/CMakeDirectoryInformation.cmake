@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "C:/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build")
 
 
 # The C and CXX include file regular expressions for this directory.

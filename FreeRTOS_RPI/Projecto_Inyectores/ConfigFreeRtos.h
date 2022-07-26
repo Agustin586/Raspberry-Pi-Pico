@@ -8,7 +8,7 @@
 // --Tareas
 extern volatile uint16_t ucEncCont;
 // --Timers
-extern TimerHandle_t xAntirreboteTimer,xConfigTimer,xAdcTimer;
+extern TimerHandle_t xAntirreboteTimer,xConfigTimer,xAdcTimer,xRelojTimer;
 extern volatile bool bEncAB;
 extern bool bLeerReloj;
 extern bool bLeerAdc;

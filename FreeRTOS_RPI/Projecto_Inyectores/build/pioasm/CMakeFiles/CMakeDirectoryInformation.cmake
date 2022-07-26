@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "C:/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/tools/pioasm")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pioasm")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pioasm")
 
 
 # The C and CXX include file regular expressions for this directory.

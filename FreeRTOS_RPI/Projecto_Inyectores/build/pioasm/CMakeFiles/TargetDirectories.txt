@@ -1,3 +1,3 @@
-C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pioasm/CMakeFiles/pioasm.dir
-C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pioasm/CMakeFiles/edit_cache.dir
-C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pioasm/CMakeFiles/rebuild_cache.dir
+C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pioasm/CMakeFiles/pioasm.dir
+C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pioasm/CMakeFiles/rebuild_cache.dir

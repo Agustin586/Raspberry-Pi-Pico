@@ -1,7 +1,7 @@
 CMakeFiles\Projecto_Inyectores.dir\Adc.c.obj: \
- C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto\ Inyectores\ (Copia)\Projecto_Inyectores\Adc.c \
- C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto\ Inyectores\ (Copia)\Projecto_Inyectores\Adc.h \
- C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto\ Inyectores\ (Copia)\Projecto_Inyectores\Includes.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\Adc.c \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\Adc.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\Includes.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_base\include/pico.h \
@@ -21,9 +21,9 @@ CMakeFiles\Projecto_Inyectores.dir\Adc.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_intsup.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_stdint.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
- C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\GENERA~1\PICO_B~1/pico/version.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\generated\pico_base/pico/version.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- C:\Users\aguat\OneDrive\DOCUME~1\GitHub\RASPBE~1\FREERT~1\PROJEC~1\PROJEC~1\build\GENERA~1\PICO_B~1/pico/config_autogen.h \
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\generated\pico_base/pico/config_autogen.h \
  C:/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/boards/include/boards/pico.h \
  C:/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  C:/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
@@ -94,7 +94,7 @@ CMakeFiles\Projecto_Inyectores.dir\Adc.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_stdlib\include/pico/stdlib.h \
  C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio.h \
- C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
+ C:\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\include/FreeRTOS.h \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\include/FreeRTOSConfig.h \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\include/projdefs.h \
@@ -109,4 +109,4 @@ CMakeFiles\Projecto_Inyectores.dir\Adc.c.obj: \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\include/timers.h \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\include/semphr.h \
  C:\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\include/queue.h \
- C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto\ Inyectores\ (Copia)\Projecto_Inyectores\Defines.h
+ C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\Defines.h

@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS-RPI-pico/Projecto Inyectores (Copia)/Projecto_Inyectores/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/aguat/OneDrive/Documentos/GitHub/Raspberry-Pi-Pico-Projects/FreeRTOS_RPI/Projecto_Inyectores/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

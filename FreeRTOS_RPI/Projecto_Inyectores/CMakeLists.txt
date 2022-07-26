@@ -58,8 +58,8 @@ target_link_libraries(
                         hardware_adc
                         )
 
-# pico_enable_stdio_usb(Projecto_Inyectores 1)
-# pico_enable_stdio_uart(Projecto_Inyectores 0)
+pico_enable_stdio_usb(Projecto_Inyectores 1)
+pico_enable_stdio_uart(Projecto_Inyectores 0)
 
 target_compile_definitions(Projecto_Inyectores PRIVATE
                         mainRUN_FREE_RTOS_ON_CORE=0

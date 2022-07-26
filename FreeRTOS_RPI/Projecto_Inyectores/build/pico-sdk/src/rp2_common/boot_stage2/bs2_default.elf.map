@@ -75,5 +75,5 @@ LOAD linker stubs
  .debug_aranges
                 0x00000000       0x20 CMakeFiles\bs2_default.dir\compile_time_choice.S.obj
 
-.debug_str      0x00000000       0xdb
- .debug_str     0x00000000       0xdb CMakeFiles\bs2_default.dir\compile_time_choice.S.obj
+.debug_str      0x00000000       0xfa
+ .debug_str     0x00000000       0xfa CMakeFiles\bs2_default.dir\compile_time_choice.S.obj
