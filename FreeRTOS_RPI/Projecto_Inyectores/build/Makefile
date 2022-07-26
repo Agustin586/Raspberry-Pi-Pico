@@ -46,10 +46,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores"
+CMAKE_SOURCE_DIR = C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build"
+CMAKE_BINARY_DIR = C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\CMakeFiles" "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\CMakeFiles C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS-RPI-pico\Projecto Inyectores (Copia)\Projecto_Inyectores\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aguat\OneDrive\Documentos\GitHub\Raspberry-Pi-Pico-Projects\FreeRTOS_RPI\Projecto_Inyectores\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -209,981 +209,77 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make /nologo -$(MAKEFLAGS) pico-sdk\src\rp2_common\cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h\fast
 
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.obj: 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.obj
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.obj
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.obj
 
 # target to build an object file
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.obj
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.obj
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj
 
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.i: 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.i
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.i
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.i
 
 # target to preprocess a source file
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.i
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.i
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.i
 
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.s: 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.s
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.s
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.s
 
 # target to generate assembly for a file
-06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.s
-.PHONY : 06d777bead4d91ef873eba9267ecd8c7\GitHub\FreeRTOS-Kernel\event_groups.c.s
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.s
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.obj: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.obj
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.obj
 
 # target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.obj
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.i: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.i
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.i
 
 # target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.i
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.i
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.s: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.s
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s: 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.s
 
 # target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_exception\exception.c.s
+06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
+.PHONY : 06d777bead4d91ef873eba9267ecd8c7\Pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.s
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.obj: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_irq\irq_handler_chain.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.obj: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.obj
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.obj
 
 # target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.obj
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.i: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.i
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.i
 
 # target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.i
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.i
 
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.s: 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.s
-
-# target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\hardware_watchdog\watchdog.c.s
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_bit_ops\bit_ops_aeabi.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.i
-
-# target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.i
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.s
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.s
 
 # target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_init_rom.c.s
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_double\double_v1_rom_shim.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.i
-
-# target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.i
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.s
-
-# target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_init_rom.c.s
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_float\float_v1_rom_shim.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_int64_ops\pico_int64_ops_aeabi.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.S.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_mem_ops\mem_ops_aeabi.S.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.i
-
-# target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.i
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.s
-
-# target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\binary_info.c.s
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.i
-
-# target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.i
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.s
-
-# target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_standard_link\new_delete.cpp.s
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.obj: 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.obj
-
-# target to build an object file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.obj
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.obj
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.i: 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.i
-
-# target to preprocess a source file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.i
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.i
-
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.s: 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.s
-
-# target to generate assembly for a file
-0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.s
-.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_stdio_uart\stdio_uart.c.s
-
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.obj: 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.obj
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.obj
-
-# target to build an object file
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.obj
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.obj
-
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.i: 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.i
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.i
-
-# target to preprocess a source file
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.i
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.i
-
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.s: 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.s
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.s
-
-# target to generate assembly for a file
-1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.s
-.PHONY : 1089879141433fa97b6cbc7799747881\FreeRTOS-Kernel\stream_buffer.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.obj: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.i: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.s: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_sync\lock_core.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.obj: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.i: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.s: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_time\timeout_helper.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.obj: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.i: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.s: 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\common\pico_util\datetime.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_adc\adc.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_claim\claim.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_gpio\gpio.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_i2c\i2c.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_irq\irq.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_pll\pll.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_sync\sync.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_timer\timer.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_uart\uart.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_vreg\vreg.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\hardware_xosc\xosc.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_bootrom\bootrom.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.S.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.S.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_divider\divider.S.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_printf\printf.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_runtime\runtime.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdio\stdio.c.s
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.obj: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.obj
-
-# target to build an object file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.obj
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.obj
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.i: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.i
-
-# target to preprocess a source file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.i
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.i
-
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.s: 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.s
-
-# target to generate assembly for a file
-1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.s
-.PHONY : 1639eef76066cfcfc3e0600198ffedf1\src\rp2_common\pico_stdlib\stdlib.c.s
-
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.obj: 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.obj
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.obj
-
-# target to build an object file
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.obj
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.obj
-
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.i: 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.i
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.i
-
-# target to preprocess a source file
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.i
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.i
-
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.s: 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.s
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.s
-
-# target to generate assembly for a file
-738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.s
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\MemMang\heap_1.c.s
-
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.obj: 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.obj
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.obj
-
-# target to build an object file
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.obj
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.obj
-
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.i: 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.i
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.i
-
-# target to preprocess a source file
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.i
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.i
-
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.s: 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.s
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.s
-
-# target to generate assembly for a file
-738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.s
-.PHONY : 738c03abc718bb9855b5931b1017364f\portable\ThirdParty\GCC\RP2040\port.c.s
-
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.obj: 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.obj
-
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.i: 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.i
-
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.s: 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\common\pico_sync\critical_section.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_clocks\clocks.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\hardware_divider\divider.S.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_aeabi.S.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_double\double_math.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_aeabi.S.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_float\float_math.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_malloc\pico_malloc.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_multicore\multicore.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.obj
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.i: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.i
-
-# target to preprocess a source file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.i
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.i
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.s: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.s
-
-# target to generate assembly for a file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.s
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_platform\platform.c.s
-
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.obj: 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.obj
-
-# target to build an object file
-752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.S.obj
-.PHONY : 752917b3f93b9029738c39c40f1a926b\rp2_common\pico_standard_link\crt0.S.obj
+0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
+.PHONY : 0e8a245fa77ddd8b14550b2c8948bab1\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
 
 Adc.obj: Adc.c.obj
 .PHONY : Adc.obj
@@ -1281,6 +377,30 @@ C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\croutine.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\croutine.c.s
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\croutine.c.s
 
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.i: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.i
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.s: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\event_groups.c.s
+
 C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.c.obj
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.obj
 
@@ -1305,6 +425,54 @@ C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.c.s
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\list.c.s
 
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.i: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.i
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.s: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\MemMang\heap_1.c.s
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.i: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.i
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.s: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.s
+
 C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.c.obj
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.obj
 
@@ -1328,6 +496,30 @@ C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.s: C_\Users\agua
 C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.c.s
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\queue.c.s
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.i: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.i
+
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.s: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\stream_buffer.c.s
 
 C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\tasks.obj: C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\tasks.c.obj
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\tasks.obj
@@ -1376,6 +568,1486 @@ C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\timers.s: C_\Users\agu
 C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\timers.c.s
 .PHONY : C_\Users\aguat\OneDrive\Documentos\GitHub\FreeRTOS-Kernel\timers.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ecm_rndis_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\net\ncm_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\class\video\video_device.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\lib\tinyusb\src\tusb.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\critical_section.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\lock_core.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\mutex.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_sync\sem.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\time.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_time\timeout_helper.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\datetime.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\pheap.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\common\pico_util\queue.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_adc\adc.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_math.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_math.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_platform\platform.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_printf\printf.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.s
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.obj: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.obj
+
+# target to build an object file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.i: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.i
+
+# target to preprocess a source file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.i
+
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.s: C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.s
+
+# target to generate assembly for a file
+C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
+.PHONY : C_\Users\aguat\OneDrive\Documentos\Pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.s
 
 ConfigFreeRtos.obj: ConfigFreeRtos.c.obj
 .PHONY : ConfigFreeRtos.obj
@@ -1473,126 +2145,6 @@ RTC_DS3231.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\RTC_DS3231.c.s
 .PHONY : RTC_DS3231.c.s
 
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.obj: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.obj
-
-# target to build an object file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.obj
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.i: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.i
-
-# target to preprocess a source file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.i
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.s: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.s
-
-# target to generate assembly for a file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\mutex.c.s
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.obj: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.obj
-
-# target to build an object file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.obj
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.i: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.i
-
-# target to preprocess a source file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.i
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.s: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.s
-
-# target to generate assembly for a file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_sync\sem.c.s
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.obj: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.obj
-
-# target to build an object file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.obj
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.i: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.i
-
-# target to preprocess a source file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.i
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.s: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.s
-
-# target to generate assembly for a file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_time\time.c.s
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.obj: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.obj
-
-# target to build an object file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.obj
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.i: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.i
-
-# target to preprocess a source file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.i
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.s: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.s
-
-# target to generate assembly for a file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\pheap.c.s
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.obj: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.obj
-
-# target to build an object file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.obj
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.obj
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.i: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.i
-
-# target to preprocess a source file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.i
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.i
-
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.s: b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.s
-
-# target to generate assembly for a file
-b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projecto_Inyectores.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Projecto_Inyectores.dir\b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.s
-.PHONY : b722761a986c70a9d2e2fcdc20cbab94\pico-sdk\src\common\pico_util\queue.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1609,128 +2161,15 @@ help:
 	@echo ... cyw43_firmware_package
 	@echo ... Projecto_Inyectores
 	@echo ... bs2_default
-	@echo ... 06d777bead4d91ef873eba9267ecd8c7/GitHub/FreeRTOS-Kernel/event_groups.obj
-	@echo ... 06d777bead4d91ef873eba9267ecd8c7/GitHub/FreeRTOS-Kernel/event_groups.i
-	@echo ... 06d777bead4d91ef873eba9267ecd8c7/GitHub/FreeRTOS-Kernel/event_groups.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_exception/exception.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_exception/exception.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_exception/exception.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_irq/irq_handler_chain.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_watchdog/watchdog.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_watchdog/watchdog.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/hardware_watchdog/watchdog.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_bit_ops/bit_ops_aeabi.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_double/double_init_rom.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_double/double_init_rom.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_double/double_init_rom.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_double/double_v1_rom_shim.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_float/float_init_rom.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_float/float_init_rom.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_float/float_init_rom.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_float/float_v1_rom_shim.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_int64_ops/pico_int64_ops_aeabi.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_mem_ops/mem_ops_aeabi.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/binary_info.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/binary_info.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/binary_info.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/new_delete.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/new_delete.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_standard_link/new_delete.s
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_stdio_uart/stdio_uart.obj
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_stdio_uart/stdio_uart.i
-	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_stdio_uart/stdio_uart.s
-	@echo ... 1089879141433fa97b6cbc7799747881/FreeRTOS-Kernel/stream_buffer.obj
-	@echo ... 1089879141433fa97b6cbc7799747881/FreeRTOS-Kernel/stream_buffer.i
-	@echo ... 1089879141433fa97b6cbc7799747881/FreeRTOS-Kernel/stream_buffer.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_sync/lock_core.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_sync/lock_core.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_sync/lock_core.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_time/timeout_helper.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_time/timeout_helper.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_time/timeout_helper.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_util/datetime.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_util/datetime.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/common/pico_util/datetime.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_adc/adc.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_adc/adc.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_adc/adc.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_claim/claim.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_claim/claim.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_claim/claim.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_gpio/gpio.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_gpio/gpio.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_gpio/gpio.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_i2c/i2c.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_i2c/i2c.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_i2c/i2c.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_irq/irq.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_irq/irq.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_irq/irq.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_pll/pll.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_pll/pll.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_pll/pll.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_sync/sync.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_sync/sync.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_sync/sync.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_timer/timer.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_timer/timer.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_timer/timer.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_uart/uart.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_uart/uart.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_uart/uart.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_vreg/vreg.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_vreg/vreg.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_vreg/vreg.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_xosc/xosc.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_xosc/xosc.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/hardware_xosc/xosc.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_bootrom/bootrom.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_bootrom/bootrom.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_bootrom/bootrom.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_divider/divider.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_printf/printf.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_printf/printf.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_printf/printf.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_runtime/runtime.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_runtime/runtime.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_runtime/runtime.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdio/stdio.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdio/stdio.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdio/stdio.s
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdlib/stdlib.obj
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdlib/stdlib.i
-	@echo ... 1639eef76066cfcfc3e0600198ffedf1/src/rp2_common/pico_stdlib/stdlib.s
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/MemMang/heap_1.obj
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/MemMang/heap_1.i
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/MemMang/heap_1.s
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/ThirdParty/GCC/RP2040/port.obj
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/ThirdParty/GCC/RP2040/port.i
-	@echo ... 738c03abc718bb9855b5931b1017364f/portable/ThirdParty/GCC/RP2040/port.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/common/pico_sync/critical_section.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/common/pico_sync/critical_section.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/common/pico_sync/critical_section.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/hardware_clocks/clocks.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/hardware_clocks/clocks.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/hardware_clocks/clocks.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/hardware_divider/divider.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_double/double_aeabi.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_double/double_math.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_double/double_math.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_double/double_math.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_float/float_aeabi.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_float/float_math.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_float/float_math.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_float/float_math.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_malloc/pico_malloc.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_malloc/pico_malloc.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_malloc/pico_malloc.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_multicore/multicore.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_multicore/multicore.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_multicore/multicore.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_platform/platform.obj
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_platform/platform.i
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_platform/platform.s
-	@echo ... 752917b3f93b9029738c39c40f1a926b/rp2_common/pico_standard_link/crt0.obj
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+	@echo ... 06d777bead4d91ef873eba9267ecd8c7/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+	@echo ... 0e8a245fa77ddd8b14550b2c8948bab1/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
 	@echo ... Adc.obj
 	@echo ... Adc.i
 	@echo ... Adc.s
@@ -1743,18 +2182,215 @@ help:
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/croutine.obj
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/croutine.i
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/croutine.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/event_groups.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/event_groups.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/event_groups.s
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/list.obj
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/list.i
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/list.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/MemMang/heap_1.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.s
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/queue.obj
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/queue.i
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/queue.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/stream_buffer.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/stream_buffer.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/stream_buffer.s
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/tasks.obj
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/tasks.i
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/tasks.s
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/timers.obj
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/timers.i
 	@echo ... C_/Users/aguat/OneDrive/Documentos/GitHub/FreeRTOS-Kernel/timers.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/tusb.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/tusb.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/lib/tinyusb/src/tusb.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/critical_section.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/critical_section.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/critical_section.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/lock_core.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/lock_core.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/lock_core.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/mutex.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/mutex.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/mutex.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/sem.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/sem.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_sync/sem.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/time.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/time.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/time.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/timeout_helper.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/timeout_helper.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_time/timeout_helper.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/datetime.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/datetime.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/datetime.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/pheap.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/pheap.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/pheap.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/queue.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/queue.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/common/pico_util/queue.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_exception/exception.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_divider/divider.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_math.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_math.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_platform/platform.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_platform/platform.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_printf/printf.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
+	@echo ... C_/Users/aguat/OneDrive/Documentos/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
 	@echo ... ConfigFreeRtos.obj
 	@echo ... ConfigFreeRtos.i
 	@echo ... ConfigFreeRtos.s
@@ -1767,21 +2403,6 @@ help:
 	@echo ... RTC_DS3231.obj
 	@echo ... RTC_DS3231.i
 	@echo ... RTC_DS3231.s
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/mutex.obj
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/mutex.i
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/mutex.s
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/sem.obj
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/sem.i
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_sync/sem.s
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_time/time.obj
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_time/time.i
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_time/time.s
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/pheap.obj
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/pheap.i
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/pheap.s
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/queue.obj
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/queue.i
-	@echo ... b722761a986c70a9d2e2fcdc20cbab94/pico-sdk/src/common/pico_util/queue.s
 .PHONY : help
 
 

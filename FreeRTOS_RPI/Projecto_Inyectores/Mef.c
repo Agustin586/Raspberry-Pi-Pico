@@ -23,6 +23,7 @@ typedef enum Ms_est
     FUGA,
     FLUJO,
     PULVERIZACION,
+    INICIO_PROCESO,
     RESET
 }Ms_est;
 typedef enum Ms_SMp_est
@@ -40,33 +41,45 @@ typedef enum Ms_SMx_est
     MINUTO,
     SEGUNDO
 }Ms_SMx_est;
+typedef enum Mef_Inicio_est
+{
+    ACTIVADO_SALIDA,
+    TEMPORIZADOR,
+    DETENER,
+    FIN_PROCESO
+}Mef_Inicio_est;
 
 Data_est Est_mef;               // Estado de la maquina de estado
 Mef_est Estado_M;               // Estado Menu
 Ms_est Estado_Ms;               // Estado SubMenu
 Ms_SMp_est Estado_Ms_SMp;       // Estado 
 Ms_SMx_est Estado_Ms_SMx_Time;
+Mef_Inicio_est Estado_Salida;
+bool bInicio=false; 
 
 // **Configuracion Inicial** //
 
 void MEF_Init ( void )
 {
-    uart_puts ( UART_ID, "page pMenuInicio" );
+    // uart_puts ( UART_ID, "page pMenuInicio" );
+    printf ( "page pMenuInicio" );
+    
     SentData_Nextion ();
     vTaskDelay ( DELAY_15ms );
     Estado_M = INIT;
     Estado_Ms = RESET;
     Estado_Ms_SMp = SELECTOR;
     Estado_Ms_SMx_Time = HORA;
+    Estado_Salida = ACTIVADO_SALIDA;
 
     return;
 }
 
 // **** //
 
-// **Menus**//
+//  Menus  //
 
-// --Seleccion Menus
+// Seleccion Menus
 void MEF ( void )
 {
     switch ( Estado_M )
@@ -79,32 +92,35 @@ void MEF ( void )
         }
         case RELOJ:             // Menu de reloj
         {
+            // printf ("\nEstado Reloj");
             MEF_Mr ();              // Menu: reloj
-            Estado_M = TEMPETURA;
+            // Estado_M = TEMPETURA;
         break;
         }
         case TEMPETURA:         // Menu de temperatura
         {
             MEF_Mt ();              // Menu: temperatura
-            Estado_M = SELECTOR_MODO;
+            // Estado_M = SELECTOR_MODO;
         break;
         }
         case SELECTOR_MODO:     // Menu de selector de modos de trabajo
         {
             MEF_Ms ();              // Menu: seleccion modo de trabajo
-            Estado_M = RELOJ;
+            // Estado_M = RELOJ;
         break;
         }
     }
 
     return;
 }
-// --Menu inicio
+// Menu inicio
 static void MEF_Mi ( void )
 {
+    Control_Mi_escrituraReloj ();
+    
     return;
 }
-// --Menu reloj
+// Menu reloj
 static void MEF_Mr ( void )
 {
     Control_Mr_lectura ();
@@ -112,19 +128,19 @@ static void MEF_Mr ( void )
 
     return;
 }
-// --Menu temperatura
+// Menu temperatura
 static void MEF_Mt ( void )
 {
     Control_Mt_lectura ();
     
     return;
 }
-// --Menu configuracion
+// Menu configuracion
 static void MEF_Mc ( void )
 {
     return;
 }
-// --Menu seleccion modo de trabajo
+// Menu seleccion modo de trabajo
 static void MEF_Ms ( void )
 {
     switch ( Estado_Ms )
@@ -144,8 +160,14 @@ static void MEF_Ms ( void )
             Ms_SMp ();          // Menu:selector; Submenu:pulverizacion
         break;
         }
+        case INICIO_PROCESO:
+        {
+            Ms_SMsalida ();        // Menu:selector; Submenu:corre el software
+        break;
+        }
         case RESET:
         {
+            printf ( "\nEstoy en reset" );
             Ms_SMr ();
             if ( Control_Ms_Smodo () == FUGA )                  Estado_Ms = FUGA;
             else if ( Control_Ms_Smodo () == FLUJO )            Estado_Ms = FLUJO;
@@ -156,21 +178,59 @@ static void MEF_Ms ( void )
 
     return;
 }
+// Menu:selector, MEF:Activado
+static void PROCESO_SALIDA ( void )
+{
+    switch ( Estado_Salida )
+    {
+        case ACTIVADO_SALIDA:
+        {
+            // Activa la salida
+            Control_Salida_Activado ();
+
+            Estado_Salida = TEMPORIZADOR;            
+        break;
+        }        
+        case TEMPORIZADOR:
+        {
+            if ( gpio_get( pinDETENER ) )   Estado_Salida = DETENER;
+            else                            Estado_Salida = TEMPORIZADOR;
+
+            Control_Salida_Temporizador ( &Estado_Salida );
+        break;
+        }
+        case DETENER:
+        {
+            // Detiene el proceso
+
+            // Ingresa al reset
+        break;  
+        }
+        case FIN_PROCESO:
+        {
+            // Resetea las variables
+
+        break;
+        }
+    }
+    return;
+}
+
 // **** //
 
-// ** SubMenus ** //
+//  SubMenus  //
 
-// --SubMenu fuga
+// SubMenu:fuga
 static void Ms_SMfu ( void )
 {
     return;
 }
-// --SubMenu flujo
+// SubMenu:flujo
 static void Ms_SMfl ( void )
 {
     return;
 }
-// --SubMenu pulverizacion
+// SubMenu:pulverizacion
 static void Ms_SMp ( void )
 {
     switch ( Estado_Ms_SMp )
@@ -197,7 +257,7 @@ static void Ms_SMp ( void )
         }
         case ACEPTAR:
         {
-
+            Ms_SMp_Aceptar ();
         break;
         }
         case ATRAS:
@@ -208,12 +268,22 @@ static void Ms_SMp ( void )
     }
     return;
 }
+// Submenu:reset
 static void Ms_SMr ( void )
 {
     Control_Ms_SMr_datos ();
 
     return;
 }
+// Submenu:inicio
+static void Ms_SMsalida ( void )
+{
+    // Ingresa a la maquina de estado de activado de salida
+    PROCESO_SALIDA ();
+
+    return;
+}
+// Submenu:pulverizacion,Config:Rpm
 static void Ms_SMp_RPM ( void )
 {
     // Modifica el valor del rpm
@@ -221,12 +291,15 @@ static void Ms_SMp_RPM ( void )
 
     return;
 }
+// Submenu:pulverizacion,Config:Pwm
 static void Ms_SMp_PWM ( void )
 {
+    // Modifica el valor del pwm
     if ( Control_Ms_SMp_PWMva () )  Estado_Ms_SMp = SELECTOR;
 
     return;
 }
+// Submenu:pulverizacion,Config:Tiempo
 static void Ms_SMx_TIME ( void )
 {
     switch ( Estado_Ms_SMx_Time )
@@ -250,6 +323,12 @@ static void Ms_SMx_TIME ( void )
 
     return;
 }
+// Submenu:pulverizacion,Config:Aceptar
+static void Ms_SMp_Aceptar ( void )
+{
+    if ( Control_Ms_SMp_Aceptar () ) bInicio=true,Estado_Ms=INICIO_PROCESO;
+}
+// Submenu:pulverizacion,Config:Atras
 static void Ms_SMx_Atras ( void )
 {
     Estado_Ms_SMp = SELECTOR;
@@ -257,6 +336,7 @@ static void Ms_SMx_Atras ( void )
 
     return;
 }
+
 // **** //
 
 // void MEF ( void )

@@ -36,12 +36,28 @@ typedef struct Data_rtc
 }Data_rtc;
 Data_rtc strReloj;
 
+bool bTemporizador=false;
+
+// ** Menu Inicio ** //
+
+void Control_Mi_escrituraReloj ( void )
+{
+    DS3231_EnviarTiempo ( 13,33,0 );
+    DS3231_EnviarFecha ( 7,17,22 );
+    printf ("\nFecha y hora enviada");
+
+    return;
+}
+
+// **** //
+
 // ** Menu Reloj ** //
 
 void Control_Mr_lectura ( void )
 {
     if ( bLeerReloj )
     {
+        printf ("\nLeyendo Reloj");
         DS3231_LeerTiempo ( &strReloj.ucHor, &strReloj.ucMin, &strReloj.ucSeg );
         DS3231_LeerFecha ( &strReloj.ucMes, &strReloj.ucDia, &strReloj.ucAnio );
     }
@@ -52,7 +68,9 @@ void Control_Mr_escritura ( void )
 {
     if ( bLeerReloj )
     {
-        Nextion_Mr ( strReloj.ucHor, strReloj.ucMin, strReloj.ucDia, strReloj.ucMes, strReloj.ucAnio );
+        // Nextion_Mr ( strReloj.ucHor, strReloj.ucMin, strReloj.ucDia, strReloj.ucMes, strReloj.ucAnio );
+        printf ( "\nHora:%u,\tMin:%u,\tSeg:%u",strReloj.ucHor,strReloj.ucMin,strReloj.ucSeg );
+        printf ( "\nDia:%u\tMes:%u,\tAnio:%u",strReloj.ucDia,strReloj.ucMes,strReloj.ucAnio );
         bLeerReloj = false;  
     }
     
@@ -67,7 +85,8 @@ void Control_Mt_lectura ( void )
 {
     if ( bLeerAdc )
     {
-        Nextion_Mt ( Adc_lectura() );   // Envia a la pantalla el valor de temperatura
+        // Nextion_Mt ( Adc_lectura() );   // Envia a la pantalla el valor de temperatura
+        printf ( "\nTemperatura:%u", Adc_lectura() );
         bLeerAdc = false;
     }
 
@@ -134,18 +153,20 @@ void Control_Ms_SMp_Selec ( Ms_SMp_est *Estado )
     // Setea el limite de selecciones
     if ( ucEncCont > Ms_SMp_MAXCANTSELECT ) ucEncCont--;
 
+    // Cambia la pantalla
     if ( ucEncCont == RPM-1 )
-        Nextion_Ms_SMp_Srpm (true);     // Actualiza la pantalla
+        Nextion_Ms_SMp_Srpm (true);     // Configuracion:Rpm
     else if ( ucEncCont == PWM-1 )
-        Nextion_Ms_SMp_Spwm (true);     // Actualiza la pantalla
+        Nextion_Ms_SMp_Spwm (true);     // Configuracion:Pwm
     else if ( ucEncCont == TIME-1 )
-        Nextion_Ms_SMp_Stime (true);    // Actualiza la pantalla
+        Nextion_Ms_SMp_Stime (true);    // Configuracion:Tiempo
     else if ( ucEncCont == ATRAS-1 )
         Nextion_Ms_SMx_SAtras ();
 
+    // Selecciona el tipo de configuraccion
     if ( gpio_get ( pinENCODER_PUSH ) )
     {
-        *Estado = ucEncCont;
+        *Estado = ucEncCont;            // Cambia el estado
         ucEncCont = 0;
         Antirrebote ();
     }
@@ -169,8 +190,8 @@ bool Control_Ms_SMp_RPMva ( void )
     // Detecta si quiere salir de la configuracion de rpm
     if ( gpio_get ( pinENCODER_PUSH ) )
     {
-        ucEncCont = 0;              // Reinicia el contador
-        Nextion_Ms_SMp_Srpm (false);// Actualiza la pantalla
+        ucEncCont = 0;                  // Reinicia el contador
+        Nextion_Ms_SMp_Srpm (false);    // Actualiza la pantalla
         Antirrebote ();
 
         return true;
@@ -215,9 +236,9 @@ bool Control_Ms_SMx_TIMEh ( void )
     {
         ucEncCont = 0;
         Antirrebote ();
-        return 1;
+        return true;
     }
-    else    return 0;
+    else    return false;
 }
 bool Control_Ms_SMx_TIMEm ( void )
 {
@@ -258,18 +279,75 @@ bool Control_Ms_SMx_TIMEs ( void )
     else    return 0;
 }
 
+bool Control_Ms_SMp_Aceptar ( void )
+{
+    if ( gpio_get ( pinENCODER_PUSH ) )
+    {
+        return true;
+    }
+
+    return false;
+}
+
+void Control_Salida_Activado ( void )
+{
+    uint slice_num;
+    const uint8_t clk_div=255,fract=15;
+    uint16_t wrap;
+    float periodo;
+    uint16_t pwm_val;
+
+    periodo = 1250000000.0 / ( stDato_Iny.usRpm_val / 60.0 );
+    wrap = ( periodo / ( clk_div + fract / 16.0 ) ) - 1;
+    pwm_val = (uint16_t) ( ( wrap * stDato_Iny.ucPwm_val ) / 100.0 );
+
+    // Activamos el pwm
+    slice_num = pwm_gpio_to_slice_num ( pinINYECTORES );        // Buscamos la parte disponible
+    pwm_set_clkdiv_int_frac ( slice_num, clk_div, fract );      // Seteamos el divisor y el fraccional
+    pwm_set_wrap ( slice_num, wrap );                           // Seteamos el TOP
+    pwm_set_gpio_level ( pinINYECTORES, pwm_val );              // Seteamos el valor del pwm
+    pwm_set_enabled ( slice_num, true );                        // Activa la salida
+
+    // Activamos la Bomba 1
+    gpio_put ( pinBOMBA1, HIGH );
+
+    // Activamos el temporizador
+    bTemporizador = true;
+
+    // Cambiamos de pantalla
+    Nextion_Salida_Activado ();
+
+    return;
+}
+void Control_Salida_Temporizador ( enum Mef_Inicio_est *Estado_Salida )
+{
+
+    return;
+}
+void Control_Salida_Detener ( void )
+{
+
+    return;
+}
+void Control_Salida_Reset ( void )
+{
+
+    return;
+}
+
 // **** //
 
 void Antirrebote ( void )
 {
     gpio_put ( pinBUZZER, HIGH );
     vTaskDelay ( DELAY_60ms );
-    gpio_put ( pinBUZZER, LOW );
 
     while ( gpio_get ( pinENCODER_PUSH ) )
     {
         vTaskDelay ( DELAY_60ms );
     }
 
+    gpio_put ( pinBUZZER, LOW );
+    
     return;
 }

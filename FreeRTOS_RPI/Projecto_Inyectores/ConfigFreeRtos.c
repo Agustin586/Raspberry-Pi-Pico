@@ -37,16 +37,19 @@ static void prvSetupTimer ( void )
         3. Se activa cuando surge el cambio de estado de la interrupcion
         4. Se activa cuando se comienza a configurar los parametros
         5. Cada un segundo activa la lectura del reloj de tiempo real
+        6. Temporizador de lectura de temperatura del micro cada 200ms
     */
     xBlinkTimer       = xTimerCreate ( "BLINK",DELAY_500ms,pdTRUE,0,prvBlinkTimer );
     xPwmEnableTimer   = xTimerCreate ( "BLINK_PWM",DELAY_300ms,pdTRUE,0,prvPwmEnableTimer );
-    xAntirreboteTimer = xTimerCreate ( "ANTIRREBOTE",DELAY_200ms,pdFALSE,0,prvEncoderAntirrebote );
+    xAntirreboteTimer = xTimerCreate ( "ANTIRREBOTE",DELAY_60ms,pdFALSE,0,prvEncoderAntirrebote );
     xConfigTimer      = xTimerCreate ( "CONFIG",DELAY_200ms,pdTRUE,0,prvConfigTimer );
     xRelojTimer       = xTimerCreate ( "RELOJ", DELAY_1s,pdTRUE,0,prvRelojTimer );
     xAdcTimer         = xTimerCreate ( "ADC",DELAY_200ms,pdTRUE,0,prvAdcTimer);
 
     // Inicia el/los timer/s
     if ( xBlinkTimer != NULL )  xTimerStart ( xBlinkTimer,0 );
+    if ( xRelojTimer != NULL)   xTimerStart ( xRelojTimer, DELAY_100ms );    // Inicia luego de 100ms
+    if ( xAdcTimer != NULL )    xTimerStart ( xAdcTimer, DELAY_100ms );
 
     return;
 }
@@ -63,7 +66,7 @@ static void prvSetupTask ( void )
 static void prvSetupSemp ( void )
 {
     // Creamos un semaforo para las interrupciones
-    xUartRxSemaphore = xSemaphoreCreateCounting ( 10,0 );   
+    // xUartRxSemaphore = xSemaphoreCreateCounting ( 10,0 );   
     xEncA_rising = xSemaphoreCreateCounting ( 5,0 );       // Crea un semaforo con 10 tokens
     xEncA_falling = xSemaphoreCreateCounting ( 5,0 );
 
@@ -90,7 +93,7 @@ void vMEF_Task ( void *pvParameter )
     while (1)
     {
         MEF ();
-        vTaskDelay ( DELAY_15ms );
+        vTaskDelay ( DELAY_5ms );
     }
 
     vTaskDelete ( NULL );
@@ -133,6 +136,8 @@ static void vISR_pinA_edgeRising ( void *pvParameter )
             vTaskDelay ( DELAY_30ms );
             gpio_put ( pinBUZZER,LOW );
             vTaskDelay ( DELAY_15ms );
+
+            // printf ( "\nencoder:%u",ucEncCont);
         }
     }
     vTaskDelete ( NULL );    
@@ -153,6 +158,8 @@ static void vISR_pinA_edgeFalling ( void *pvParameter )
             vTaskDelay ( DELAY_30ms );
             gpio_put ( pinBUZZER,LOW );
             vTaskDelay ( DELAY_15ms );
+
+            // printf ( "\nencoder:%u",ucEncCont);
         }
     }
     vTaskDelete ( NULL );    

@@ -27,11 +27,13 @@
 #include "Includes.h"
 
 // *Variables** //
-extern volatile uint16_t ucEncCont;     // Contador que se mueve con el encoder
-extern TimerHandle_t xConfigTimer;      // Indica que la configuracion esta activada
-extern struct Datos_Iny stDato_Iny;     // Registro de datos de los inyectores
-extern enum Ms_SMp_est Estado;          // Estado del sub menu pulverizacion
-extern struct Data_rtc strReloj;         // Registro de datos del rtc
+extern volatile uint16_t ucEncCont;         // Contador que se mueve con el encoder
+extern TimerHandle_t xConfigTimer;          // Indica que la configuracion esta activada
+extern struct Datos_Iny stDato_Iny;         // Registro de datos de los inyectores
+extern enum Ms_SMp_est Estado;              // Estado del sub menu pulverizacion
+extern struct Data_rtc strReloj;            // Registro de datos del rtc
+extern enum Mef_Inicio_est Estado_Salida;
+extern bool bTemporizador;                  // Activa el temporizador
 
 // **Funciones** //
 // --NO FreeRTOS
@@ -43,9 +45,15 @@ bool Control_Ms_SMp_PWMva ( void );
 bool Control_Ms_SMx_TIMEh ( void );
 bool Control_Ms_SMx_TIMEm ( void );
 bool Control_Ms_SMx_TIMEs ( void );
+bool Control_Ms_SMp_Aceptar ( void );
+void Control_Salida_Activado ( void );
+void Control_Salida_Temporizador ( enum Mef_Inicio_est *Estado_Salida );
+void Control_Salida_Detener ( void );
+void Control_Salida_Reset ( void );
 void Control_Mr_lectura   ( void );
 void Control_Mr_escritura ( void );                     // Menu:reloj --> Envia datos de fecha y hora
 void Control_Mt_lectura   ( void );                     // Menu:temperatura --> Lee y manda el valor de temperatura
+void Control_Mi_escrituraReloj ( void );                // Menu:inicio --> Escribe en el reloj
 void Antirrebote ( void );                              // Antirrebote de los pulsadores y encoder
 
 #endif /* BLOQUE_CONTROL.H */
